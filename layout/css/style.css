@@ -56,7 +56,6 @@ li a{
 	border:1px ;
 	height:200px;
 	width:80%;
-	background-color:;
 	margin-top:130px;
 	margin-left:400px;
 	float:right;
@@ -89,6 +88,9 @@ button{
 }
 .orange a{
 	text-decoration:none;
+}
+.orange button:hover{
+	background-color:#ffc107;
 }
 .helo{
 	font-size: 48px;
@@ -137,7 +139,6 @@ button{
 	cursor:pointer;
 }
 .rest{
-	border:1px solid black;
     height:600px;
 	width:99%;
 	margin-top:50px;
@@ -257,10 +258,8 @@ button{
 	line-height:0px;
 }
 .no2{
-	border:;
 	height:100px;
 	width:12%;
-	background-color:;
 	margin-top:0px;
 }
 .no2 h1{
@@ -270,10 +269,8 @@ button{
 	font-size:18px;
 }
 .no3{
-	border:;
 	height:100px;
 	width:12%;
-	background-color:;
 	margin-top:0px;
 }
 .no3 h1{
@@ -510,7 +507,6 @@ button{
 	font-family: "Raleway", sans-serif;
 }
 .call{
-	border:1px solid black;
 	height:250px;
 	width:99%;
 	background-color:414C64;
@@ -536,6 +532,9 @@ button{
 	color:white;
 	background-color:414C64;
 	cursor:pointer;
+}
+.call button:hover{
+	background-color:#ffc107;
 }
 
 }
@@ -613,17 +612,13 @@ button{
 .tm2{
 	height:350px;
 	width:28%;
-	background-color:;
 	margin-top:30px;
 	margin-right:50px;
 	margin-left:40px;
 	text-align:center;
-	
-
 }
 .tm2p{
 	box-shadow: 0px 5px 90px 0px rgb(110 123 131 / 10%);
-	
 }
 .tm2 p
 {   text-align:center;
@@ -653,7 +648,6 @@ button{
 .tm3{
 	height:350px;
 	width:30%;
-	background-color:;
 	margin-top:30px;
 	margin-right:50px;
 	margin-left:px;
@@ -686,22 +680,11 @@ button{
 	margin-top:-30px;
 	font-size:16px;
 }
-	
-}
-.port
-{border:1px solid black;
-	height:150px;
-	width:99%;
-	margin-top:30px;
-	background-color:#ff99ff;
-	
-}
+
 .app{margin-top:-60px;
     border:radius:40%; 
-	
 }
-.app button
-{  
+.app button{  
 	width:5%;
 	border:white;
 	cursor:pointer;
@@ -714,8 +697,6 @@ button{
 	color:white;
     background-color:orange;
 }
-	
-
 .portfolio
 {
     height:250px;
@@ -724,8 +705,7 @@ button{
 	text-align:center;
 	background-color:;
  }
- .portfolio h2
- {
+ .portfolio h2{
 	 font-size:34px;
 	 font-weight:bold;
 }
@@ -789,7 +769,6 @@ margin-top:30px;
 	margin-left:-45px;
 }
 .mates{
-	border:1px solid black;
 	height:600px;
 	width:99%;
 	margin-top:50px;
@@ -907,14 +886,11 @@ margin-top:20px;}
 	margin-top:-15px;
 }
 .free{
-	border:1px solid black;
-	margin-top:100px;
+	margin-top:0px;
 }
 .pricing{
-    
     width:99%;
 	margin-top:0px;
-	
 }
 .hp{
 	margin-top:60px;
@@ -940,10 +916,8 @@ margin-top:20px;}
 	margin-top:-10px;
 }
 .buy{
-	border:1px solid black;
 	height:550px;
 	width:99%;
-	background-color:;
 	display:flex;
 	margin-top:50px;
 }
@@ -962,7 +936,7 @@ margin-top:20px;}
 	color:black;
     background-color:F8F8F8;
 	font-family: "Raleway", sans-serif;
-	}
+}
 .freespan sup{
 	font-size:25px;
 	font-family:
@@ -992,6 +966,7 @@ margin-top:20px;}
 	margin-top:20px;
 	border:2px solid grey;
 	margin-left:70px;
+	cursor:pointer;
 }
 .buynow{
 	height:100px;
@@ -1014,8 +989,8 @@ margin-top:20px;}
 	margin-top:0px;
 	margin-right:20px;
 }
-.business h3
-{font-size:25px;
+.business h3{
+	font-size:25px;
 	text-align:center;
 	margin-top:0px;
 	padding:30px;
@@ -1050,7 +1025,7 @@ margin-top:20px;}
 	margin-top:20px;
 	border:2px solid grey;
 	background-color:FFC107;
-	
+	cursor:pointer;
 }
 .busbtn{
 	height:100px;
@@ -1070,8 +1045,8 @@ margin-top:20px;}
 	margin-top:0px;
 	margin-right:20px;
 }
-.developer h3
-{font-size:25px;
+.developer h3{
+	font-size:25px;
 	text-align:center;
 	margin-top:0px;
 	padding:30px;
@@ -1105,7 +1080,8 @@ margin-top:20px;}
 	width:52%;
 	margin-top:20px;
 	border:2px solid grey;
-	}
+	cursor:pointer;
+}
 .dvbtn{
 	height:100px;
 	width:100%;
@@ -1120,22 +1096,22 @@ margin-top:20px;}
 	color:grey;
 	font-weight:bold;
 	font-family: "Raleway", sans-serif;
-	}
+}
 .ultimate{
 	height:480px;
 	width:20%;
 	margin-top:0px;
 	margin-right:10px;
 }
-.ultimate h3
-{font-size:25px;
+.ultimate h3{
+	font-size:25px;
 	text-align:center;
 	margin-top:0px;
 	padding:30px;
 	color:black;
     background-color:F8F8F8;
 	font-family: "Raleway", sans-serif;
-	}
+}
 .ult sup{
 	font-size:25px;
 	font-family:
@@ -1162,6 +1138,7 @@ margin-top:20px;}
 	width:52%;
 	margin-top:20px;
 	border:2px solid grey;
+	cursor:pointer;
 }
 .ultbtn{
 	height:100px;
@@ -1180,18 +1157,25 @@ margin-top:20px;}
 }
 .ques{
 	border:1px solid black;
-	height:100px;
+	height:150px;
 	width:99%;
-	background-color:#ffcccc;
 	margin-left:10px;
 	margin-top:10px;
+	text-align:center;
+}
+.ques p{
+	font-size: 18px;
+    color: #aab3c7;
+	text-align:center;
+}
+.ques h2{
+	font-size:25px;
 }
 .faques{
 	border:1px solid black;
-	height:500px;
+	height:600px;
 	width:99%;
-	background-color:#b3ffd9;
-}
+	}
 .faq
 {
 	border:1px solid black;
@@ -1201,119 +1185,379 @@ margin-top:20px;}
 	margin-left:250px;
 	margin-top:50px;
 }
-.para
-{
-	border:1px solid black;
-	height:100px;
+.para{
+	height:200px;
 	width:99%;
-	background-color:#ff944d;
+}
+.para h1{
+	font-size: 32px;
+    font-weight: bold;
+	text-align:center;
+	font-family: "Raleway", sans-serif;
+}
+.para p{
+	margin-bottom: 0;
+    font-size: 18px;
+    color: #aab3c7;
+	text-align:center;
+}
+.contactline{
+	height:1px;
+	border:1px solid orange;
+	width:4%;
+	background-color:orange;
 }
 .address
-{
-	border:1px solid black;
-	height:600px;
+{   height:500px;
 	width:49%;
-	background-color:#b3ffff;
-	margin-left:10px;
+	margin-left:30px;
 	margin-top:10px;
-}
+	}
 .ouraddress
 {
-	border:1px solid black;
 	height:250px;
-	width:250px;
-	background-color:b3f0ff;
-	margin-top:30px;
-	margin-left:200px;
-}
-.email
-{
-    border:1px solid black;
-	height:250px;
-	width:250px;
-	background-color:b3f0ff;
-	margin-top:300px;
-	margin-left:150px;
-}
-.callus
-{
-	border:1px solid black;
-	height:250px;
-	width:250px;
-	background-color:#b3f0ff;
-	margin-left:-150px; 
-	margin-top:-250px;
-	
-}
-.form
-{
-	border:1px solid black;
-	height:590px;
-	width:499px;
-	background-color:#ff99ff;
-	margin-left:500px;
-	margin-top:-600px;
-	
-	
-}
-.links
-{
-	border:1px solid black;
-	height:400px;
-	width:99%;
-	background-color:yellow;
-	display:flex;
-	
-}
-.b1
-{
-	border:1px solid black;
-	height:320px;
-	width:20%;
-	background-color:#ff80ff;
-	margin-top:30px;
+	width:94%;
+	margin-top:0px;
 	margin-left:20px;
+	text-align:center;
+	box-shadow: 0 0 20px rgb(65 76 100 / 5%);
 }
-.b2
+.ouraddress iconify-icon{
+	font-size: 40px;
+    color: #ffc107;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #ffeeba;
+	margin-top:20px;
+}
+.ouraddress h3{
+	font-size: 23px;
+    color: #777777;
+    font-weight: 700;
+	font-family: "Raleway", sans-serif;
+}
+.ouraddress p{
+	font-size:18px;
+}
+.email{
+	height:250px;
+	width:290px;
+	margin-top:100px;
+	margin-left:330px;
+	box-shadow: 0 0 20px rgb(65 76 100 / 5%);
+}
+.email iconify-icon{
+	font-size: 40px;
+    color: #ffc107;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #ffeeba;
+	margin-top:20px;
+}
+.email h3{
+	font-size: 23px;
+    color: #777777;
+    font-weight: 700;
+	font-family: "Raleway", sans-serif;
+}
+.email p{
+	font-size:18px;
+}
+.callus{
+	height:250px;
+	width:290px;
+	margin-left:10px; 
+	margin-top:-250px;
+    box-shadow: 0 0 20px rgb(65 76 100 / 5%);
+}
+.callus iconify-icon{
+	font-size: 40px;
+    color: #ffc107;
+    border-radius: 50%;
+    padding: 8px;
+    border: 2px dotted #ffeeba;
+	margin-top:20px;
+}
+.callus h3{
+	font-size: 23px;
+    color: #777777;
+    font-family: "Raleway", sans-serif;
+}
+.callus p{
+	font-size:18px;
+	}
+.form{
+	height:500px;
+	width:600px;
+	margin-left:650px;
+	margin-top:-530px;
+	box-shadow: 0 0 20px rgb(65 76 100 / 5%);
+}
+#name
 {
+	padding:10px 15px 10px 15px;
+	width:43%;
+	font-size:18px;
+	margin-top:10px;
+	border-radius:4px 4px 4px 4px;
+	margin-top:30px;
 	border:1px solid black;
+}
+#Email
+{
+	padding:10px 15px 10px 15px;
+	width:43%;
+	font-size:18px;
+	display:inline;
+	margin-top:10px;
+	border-radius:4px 4px 4px 4px;
+	border:1px solid black;
+}
+#Subject
+{
+	padding:10px 15px 10px 15px;
+	width:88%;
+	font-size:18px;
+	margin-top:10px;
+	border-radius:4px 4px 4px 4px;
+	margin-top:30px;
+	border:1px solid black;
+}
+.Message
+{
+	padding:10px 15px 10px 15px;
+	width:90%;
+	font-size:18px;
+	margin-top:10px;
+	border-radius:4px 4px 4px 4px;
+	margin-top:30px;
+}
+.SM button{
+	background-color:#ffc107;
+	border:1px #ffc107;
+	padding-left:60px;
+	padding-right:60px;
+	text-align:center;
+	padding:15px;
+}
+.SM a{
+	text-decoration:none;
+	font-size:17px;
+	color:white;
+	font-family: inherit;
+}
+.links{height:400px;
+	width:99%;
+	display:flex;
+	margin-top:100px;
+	background-color:#fafafc;
+}
+.b1{
 	height:320px;
 	width:20%;
-	background-color:#ff80ff;
+	margin-top:40px;
+	margin-left:20px;
+	text-align:center;
+}
+.b1 h3{
+	font-size:25px;
+	font-family: "Raleway", sans-serif;
+	margin-top:20px;
+}
+.b1 p{
+	font-size: 15px;
+    line-height: 24px;
 	margin-top:30px;
+	font-family: "Raleway", sans-serif;
+    color: #777777;
+}
+.b2{height:320px;
+	width:20%;
+	margin-top:40px;
 	margin-left:30px;
+	
 }
-.b3
-{
-	border:1px solid black;
+.b2 ul li a{
+	color: #777777;
+	font-size:18px;
+}
+.b2 ul li{
+	line-height:30px;
+}
+.b2 h4{
+	font-size:25px;
+	text-align:center;
+	font-family: "Raleway", sans-serif;
+}
+.b2 iconify-icon{
+	padding-right: 2px;
+    color: #ffc107;
+    font-size: 18px;
+    line-height: 1;
+}
+.b3{
 	height:320px;
 	width:20%;
-	background-color:#ff80ff;
-	margin-top:30px;
+	margin-top:40px;
 	margin-left:30px;
 
 }
-.b4
-{
-	border:1px solid black;
+.b3 ul li a{
+	color: #777777;
+	font-size:18px;
+}
+.b3 ul li{
+	line-height:30px;
+}
+.b3 h4{
+	font-size:25px;
+	text-align:center;
+	font-family: "Raleway", sans-serif;
+}
+.b3 iconify-icon{
+	padding-right: 2px;
+    color: #ffc107;
+    font-size: 18px;
+    line-height: 1;
+}
+.b4{
 	height:320px;
 	width:30%;
-	background-color:#ff80ff;
 	margin-top:30px;
 	margin-left:30px;
 }
-.footer
-{
-	border:1px solid black;
+.b4 h4{
+	color: #444444;
+	font-size:23px;
+	font-family: "Raleway", sans-serif;
+}
+.b4 p{
+	font-size:16px;
+	color:#444444;
+	font-family: "Raleway", sans-serif;
+	font-weight: bold;
+}
+.footer{
 	height:100px;
-	width:98%;
-	background-color:pink;
+	width:100%;
+	background-color:#e1e4ec;
 	margin-top:30px;
-	margin-left:30px;
-	
+	margin-left:0px;
 }
-
+.copy{
+	margin-top:0px;
+	margin-left:20px;
+	padding:20px;
+}
+.copy h4{
+	display:inline;
+}
+.design{
+	margin-left:40px;
+}
+.design h4{
+	display:inline;
+}
+.design a{
+	text-decoration:none;
+	color:#ffc107;
+}
+.socialmedia{
+	display:flex;
+	float:right;
+	margin-top:-60px;
+    margin-right:30px;
+	width:20%;
+}
+.twit iconify-icon{
+	font-size:18px;
+	color: #5f6f92;
+	border:1px solid #f5f5f5;
+	background-color:#e1e4ec;
+	border-radius:50%;
+	padding:10px;
+	margin-right:10px;
+}
+.twit iconify-icon:hover{
+	background-color:#ffc107;
+}
+.facebook iconify-icon{
+	font-size:18px;
+	color:#5f6f92;
+	border:1px solid #f5f5f5;
+	background-color:#e1e4ec;
+	border-radius:50%;
+	padding:10px;
+	margin-right:10px;
+}
+.facebook iconify-icon:hover{
+	background-color:#ffc107;
+}
+.insta iconify-icon{
+	font-size:18px;
+	color:#5f6f92;
+	border:1px solid #f5f5f5;
+	background-color:#e1e4ec;
+	border-radius:50%;
+	padding:10px;
+	margin-right:10px;
+}
+.insta iconify-icon:hover{
+	background-color:#ffc107;
+}
+.skype iconify-icon{
+	font-size:18px;
+	color:#5f6f92;
+	border:1px solid #f5f5f5;
+	background-color:#e1e4ec;
+	border-radius:50%;
+	padding:10px;
+	margin-right:10px;
+}
+.skype iconify-icon:hover{
+	background-color:#ffc107;
+}
+.in iconify-icon{
+	font-size:18px;
+	color:#5f6f92;
+	border:1px solid #f5f5f5;
+	background-color:#e1e4ec;
+	border-radius:50%;
+	padding:10px;
+	margin-right:10px;
+}
+.in iconify-icon:hover{
+	background-color:#ffc107;
+}
+.news{
+	height:40px;
+	width:80%;
+	border:1px solid black;
+	border-radius:20px 30px 30px 20px;
+	margin-top:30px;
+	background-color:white;
+}
+.subscribe{
 	
-
-
+	border-radius:20px 20px 20px 20px;
+	text-align:center;
+	margin-left:17px;
+	background-color:#ffc107;
+	border:none;
+	color:white;
+	position:absolute;
+	padding: 13px 25px;
+	cursor:pointer;
+	margin-top:-1px;
+	box-shadow: 0px 2px 15px rgb(0 0 0 / 10%);
+}
+.emailbox{
+	padding:4px 8px;
+	border:none;
+	margin-top:6px;
+	margin-left:6px;
+}
+.emailbox:focus{
+	outline:none;
+}
 </style>
