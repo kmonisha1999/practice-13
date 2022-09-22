@@ -4,8 +4,7 @@
 	
 }
 body{
-	font-family: "Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",
-	Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	font-family: 'Raleway', sans-serif;
 }
 .header{
     background-image:url("about.jpg");
@@ -63,7 +62,7 @@ body{
 .logo h1{
 	color:white;
 	font-size:35px;
-	margin-top:px;
+	margin-top:-40px;
 	margin-left:100px;
 	cursor:pointer;
 }
@@ -83,7 +82,6 @@ body{
 .homename{
 	height:150px;
 	width:70%;
-	background-color:;
 	margin-left:180px;
 }
 .homename h2{
@@ -99,7 +97,7 @@ body{
 	margin-top:-40px;
 	text-align:center;
 	font-family: 'Raleway', sans-serif;
-	font-weight:bold;
+	font-weight:;
 }
 .change{
 	background-color:#F5F5F5;
@@ -138,7 +136,6 @@ body{
 	font-size:21px;
 	padding-left:20px;
 	line-height:30px;
-	font-weight:100;
 }
 .line{
 	border:1px solid blue;
@@ -188,6 +185,7 @@ body{
 	width:99%;
 	margin-top:-20px;
 	padding-top:-10px;
+
 }
 .me{
 	border-radius:10px 10px 10px 10px;
@@ -503,8 +501,7 @@ body{
 .client{
 	height:250px;
 	width:20%;
-
-	margin-left:30px;
+    margin-left:30px;
 	margin-top:10px;
 	text-align:center;
 	color:white;
@@ -525,8 +522,7 @@ body{
 .award{
 	height:250px;
 	width:20%;
-
-	margin-left:30px;
+    margin-left:30px;
 	margin-top:10px;
 	text-align:center;
 	color:white;
@@ -644,8 +640,7 @@ body{
 .portimages-2{
 	height:400px;
 	width:100%;
-
-	display:flex;
+    display:flex;
 	justify-content:space-between;
 	margin-top:-50px;
 }
@@ -672,7 +667,6 @@ body{
 .portimg5{
 	height:300px;
 	width:31%;
-
 	box-shadow:0 13px 8px -10px rgb(0 0 0 /20%)
 }
 .portimg5 h2{
@@ -713,9 +707,7 @@ body{
 .testimonial{
 	border:1px solid black;
 	height:600px;
-	width:;
 	background-image:url("overlay.jpg");
-    background-position:;
 	background-attachment:fixed;
 	position:relative;
 }
@@ -732,7 +724,6 @@ body{
 .tm{
 	height:350px;
 	width:70%;
-	background-color:;
 	margin:auto;
 	margin-top:100px;
 	text-align:center;
@@ -893,7 +884,7 @@ cursor:pointer;
 }
 .category1{
 	color: #fff;
-    display: inline-block;
+    padding-top:inline-block;
     text-transform: uppercase;
     font-size: 0.7rem;
     letter-spacing: 0.1px;
@@ -983,7 +974,6 @@ cursor:pointer;
 	width:90%;
 	font-size:14px;
 	margin-top:10px;
-	
 	margin-top:30px;
 	border:1px solid black;
 }
@@ -1001,8 +991,6 @@ cursor:pointer;
 	padding:10px 15px 10px 15px;
 	width:90%;
 	font-size:14px;
-	margin-top:px;
-	
 	margin-top:15px;
 	border:1px solid black;
 }
@@ -1011,7 +999,6 @@ cursor:pointer;
 	width:96%;
 	font-size:14px;
 	margin-top:15px;
-	
 }
 .SM{
 	text-align:center;
@@ -1076,5 +1063,4 @@ cursor:pointer;
 .copy a{
 	text-decoration:none;
 	color:white;
-	font-weight:;
 }
