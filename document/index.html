@@ -5,13 +5,15 @@
     <style>
 	 table, tr, th, td{
         border:1px solid black;
+		border:collapse;
 }	 
 	</style>
-    <base href="https://www.w3schools.com/" target="-blank">
+    
 	    
 
 </head>
 <body>	
+
   <h3>pre tag </h3>
   <p>pre tag is display  preformatted text</p>
   <pre>
@@ -297,20 +299,23 @@
 	  <img src="image/yellowrose.jpg" width="214" height="204">
 	</template><hr>
 
+
+
+
      <h3>DOCTYPE</h3>
 	 <p>all html documents must starts with a doctype.It is an information to the browser about what document type to expect.</p>
 	 
 	<h3>comment tag</h3>
     <p>used to insert comments.not dispalyed in the browser.</p>
-	<!-->not displayed in the browser<-->
+	<!--not displayed in the browser-->
 	
 	<h3>anchor tag</h3>
 	<p>used to link from one page to another</p>
-	<a href="https://www.w3schools.com">w3schools</a>
+	<a href="https://en.wikipedia.org/wiki/Earth">Earth</a>
 	
 	<h3>abbreviation tag</h3>
 	<p>abbr tag is used for abbreviation of the word </p>
-	<abbr title="Hyper Text Markup Language">HTML</abbr>
+	<abbr title="Master of  Science">MSC</abbr>
 	
 	
 	<h3>acronym tag</h3>
@@ -320,44 +325,53 @@
 	<h3>address tag</h3>
 	<p>address tag is defines the contact information for the author/owner of a document.it can be an email,address,url</p>
 	<address>
-        Written by <a href="mailto:abc@gmail.com">Ram</a>.<br>
+        Written by <a href="mailto:monisha291099@gmail.com">Monisha</a>.<br>
 		Visit us at:<br>
-		Example.com<br>
-		Box 564, Disneyland<br>
-		USA
+		street 564, pavoorchatram<br>
+		tenkasi.
 	</address>
 	
 	
-	<h3>applet tag</h3>
-	<p></p>
 	
+	
+<h3>applet tag</h3>
+	<p>video tag,audio tag</p>
+    <video controls>
+        <source src="newyearvideo.mp4">
+    </video>	
 	
 	<h3>area tag</h3>
-	<p></p>
+	<p>The area tag defines an area inside an image map (an image map is an image with clickable areas).</p>
+	<img src="image/green.jpg" alt="nature" usemap="#workmap" width="400" height="379">
+
+	<map name="workmap">
+	  <area shape="rect" coords="34,44,270,350" alt="nature" href="https://en.wikipedia.org/wiki/Nature" target="-blank">
+	  
+	</map>
 	
 	
 	<h3>article tag</h3>
 	<p>The article tag specifies independent, self-contained content.</p>
 	<article>
-		<h2>Mozilla Firefox</h2>
-		<p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+	       <h1>What are 5 facts about Earth</h1>
+			<p>Earth is not flat, but it's not perfectly round.The days are getting longer.There weren't always several continents.Earth's icy times. The driest place on Earth</p>
 	</article>
 	
 	<h3>aside tag</h3>
 	<p>aside tag defines some content aside from the content it is placed in.sidebar in a document</p>
 	<aside>
-		<h4>Epcot Center</h4>
-		<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+		<h4>Moon</h4>
+		<p>Moon is earth's only satellite</p>
    </aside>
 	
 	<h3>audio tag</h3>
 	<p>tag is used to embed sound content in a document, such as music </p>	
 	<audio controls>
-        <source src="backgroundmusic.mp3" type="audio/ogg">
+        <source src="image/backgroundmusic.mp3">
     </audio>
 	
 	<h3>bold tag</h3>
-	<p>used to <b>bold </b>the text</p>
+	<p>bold tag used to <b>bold </b>the text</p>
 	
 	
 	<h3>base tag</h3>
@@ -367,8 +381,8 @@
 	<h3>bdi-Bidirectional isolation</h3>
 	<p>isolates a part of text that might be formatted in a different direction from other text outside it.</p>
 	<ul>
-	  <li>User <bdi>hrefs</bdi>: 60 points</li>
-	  <li>User <bdi>jdoe</bdi>: 80 points</li>
+	  <li>User hrefs: 60 points</li>
+	  <li>User jdoe: 80 points</li>
 	  <li>User <bdi>إيان</bdi>: 90 points</li>
     </ul>
 	
@@ -378,10 +392,13 @@
 	<p><bdo dir="ltr">used to override the current text direction.</p>
 	
 	
+	<h3>big tag</h3>
+	<p>The tag was used in HTML 4 to define bigger text.</p>
+	<p>font-size</p>
+	
 	<h3>blockquote tag</h3>
 	<p>blockquote tag specifies a section that is quoted from another source.</p>
-	<blockquote>The Moon is Earth's only natural satellite and the fifth largest moon in the solar system.
-    The Moon's presence helps stabilize our planet's wobble and moderate our climate.</blockquote>
+	<blockquote>Hypertext Markup Language, a standardized system for tagging text files to achieve font, colour, graphic, and hyperlink effects on World Wide Web pages an HTML file</blockquote>
 	
 	
 	<h3>body tag</h3>
@@ -390,13 +407,13 @@
 	
 	<h3>break tag</h3>
 	<p>used for single line break</p>
-	<p>The Moon is Earth's only natural satellite and the fifth largest moon in the <br>solar system.
-    The Moon's presence helps stabilize our planet's wobble and moderate our climate.</p>
+	<p>A computer is a digital electronic machine that can be programmed to carry out<br> sequences of arithmetic or logical operations (computation) automatically.</p>
 	
 	
 	<h3>button tag</h3>
 	<p>clickable button</p>
-	<button>button</button>
+	<button>Buy Now</button>
+	<button>Buy Now</button>
 	
 	<h3>canvas tag</h3>
 	<p>used to draw graphics,(javascript)</p>
@@ -404,32 +421,38 @@
 	<h3>caption</h3>
 	<p>used for table caption</p>
 	<table> 
-	<caption>Monthly savings</caption>
+	<caption>Abi marks</caption>
 		  <thead>
 			<tr>
-			  <th>Month</th>
-			  <th>Savings</th>
+			  <th>subject</th>
+			  <th>Marks</th>
 			</tr>
 		  </thead>
 		  <tbody>
 			<tr>
-			  <td>January</td>
-			  <td>$100</td>
+			  <td>tamil</td>
+			  <td>100</td>
 			</tr>
 			<tr>
-			  <td>February</td>
-			  <td>$100</td>
+			  <td>English</td>
+			  <td>98</td>
 			</tr>
 			<tr>
-			  <td>March</td>
-			  <td>$100</td>
+			  <td>Maths</td>
+			  <td>90</td>
 			</tr>
 			<tr>
+			  <td>Science</td>
+			  <td>99</td>
+			</tr><tr>
+			  <td>Social</td>
+			  <td>95</td>
+			</tr>
 		  </tbody>
 		  <tfoot>
 			<tr>
-			  <td>Sum</td>
-			  <td>$500</td>
+			  <td>Total</td>
+			  <td>482</td>
 			</tr>
 		  </tfoot>
 	</table>
@@ -437,8 +460,9 @@
 	
 	<h3>cite tag</h3>
 	<p>title of the book or poem or a songs or paintings etc.,</p>
-	<img src="image/yellowrose.jpg" width="220" height="277" alt="The rose">
-    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+	<img src="image/hp.jpg">
+    <p><cite>Harry Potter</cite> Sorcerer's Stone (1997) </p>
+	
 	
 	
 	<h3>code tag</h3>
@@ -450,18 +474,28 @@
    <p>The col tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.</p>
 		   <table>
 		  <colgroup>
-			<col span="2" style="background-color:red">
-			<col style="background-color:yellow">
+			<col span="2" style="background-color:pink">
+			<col span="2 "style="background-color:red">
 		  </colgroup>
 		  <tr>
-			<th>ISBN</th>
-			<th>Title</th>
+			<th>Student</th>
+			<th>name</th>
 			<th>Price</th>
 		  </tr>
 		  <tr>
-			<td>3476896</td>
-			<td>My first HTML</td>
-			<td>$53</td>
+			<td>1</td>
+			<td>Abi</td>
+			<td>500</td>
+		  </tr>
+		  <tr>
+			<td>2</td>
+			<td>Abi</td>
+			<td>500</td>
+		  </tr>
+		  <tr>
+			<td>3</td>
+			<td>Abi</td>
+			<td>500</td>
 		  </tr>
 		</table>
 		
@@ -472,23 +506,23 @@
 	<h3>data tag</h3>
 	<p>The tag is used to add a machine-readable translation of a given content.</p>
 	<ul>
-	  <li><data value="21053">Cherry Tomato</data></li>
-	  <li><data value="21054">Beef Tomato</data></li>
-	  <li><data value="21055">Snack Tomato</data></li>
+	  <li><data value="1234">HTML</data></li>
+	  <li><data value="5678">CSS</data></li>
+	  <li><data value="1112">Javascript</data></li>
     </ul>
 	
 	
 	<h3>datalist</h3>
 	<p> datalist tag specifies a list of pre-defined options for an element.</p>
-	<form action="/action_page.php" method="get">
-		<label for="browser">Choose your browser from the list:</label>
-		<input list="browsers" name="browser" id="browser">
+	<form>
+		<label for="Course">Choose from the list:</label>
+		<input list="browsers" name="course" id="course">
 		<datalist id="browsers">
-			<option value="Edge">
-			<option value="Firefox">
-			<option value="Chrome">
-			<option value="Opera">
-			<option value="Safari">
+			<option value="HTML">
+			<option value="CSS">
+			<option value="JAVASCRIPT">
+			<option value="PYTHON">
+			<option value="JAVA">
 		</datalist>
     </form>
 	
@@ -496,12 +530,12 @@
 	<h3>dd, dl, dt</h3>
 	<p>dd-description definition<br>
 	dt-defines terms<br>
-	dldescription list<br></p>
+	dl-description list<br></p>
 	<dl>
-  <dt>Coffee</dt>
-	  <dd>Black hot drink</dd>
-	  <dt>Milk</dt>
-	  <dd>White cold drink</dd>
+    <dt>HTML</dt>
+	  <dd>Hypertext Markup language</dd>
+	  <dt>CSS</dt>
+	  <dd>Cascading stylesheet</dd>
   </dl>
 	
 	
@@ -522,7 +556,8 @@
 	
 	
 	<h3>dialoge tag</h3>
-	<dialog open>dialogue tag defines a dialog box</dialog>
+	<dialog open>dialogue tag is defines as a dialogue box</dialog>
+	
 	
 	
 	<h3>dir tag</h3>
@@ -535,20 +570,324 @@
 	     <h1>HTML</h1>
 		 <p>The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.</p>
 	</div>
+	
+	
+	
 
-     <h3>em tag</h3>
-	 <p>The  tag is used to define <em>emphasized text</em>. The content inside is typically displayed in italic.</p>
+    <h3>em tag</h3>
+	<p>The  tag is used to define <em>emphasized text</em>. The content inside is typically displayed in italic.</p><hr>
 
 
+    
+    
+	<h3>embed tag</h3>
+	<p>embed tag is used to for an external resource, such as a picture,video,audio</p>
 
-
-
-
+    <embed src="image/yellowrose.jpg" height="250px" width="250px">
 	
 	
 	
 	
+	<h3>fieldset tag</h3>
+	<p> fieldset is used to group related element in a form</p>
+	<fieldset>
+	    <label for ="name">Name</label><input type="text"></br></br>
+		<label for="registration no">Reg no</label><input type="text" id="name" size="14"></br></br>
+		<label for="DOB">DOB</label><input type="date" id="birth"></br></br>
+		<label for="email">Email</label><input type="text">
+		<label for="Password">Password</label><input type="password"></br></br>
+		<label>Gender:</label>
+		<label for="Gender"></label>Male<input type="radio"name="Gender" value="male">
+		<label for="Gender"></label>Female<input type="radio" name="Gender" value="Female"></br></br>
+		<label for="Mobile no">Mobile no</label><input type="tel" pattern="[0-9]" id="number"></br></br>
+	</fieldset>
 	
+	
+	<h3>figure and figurecaption</h3>
+	<p>figure: insert image,photo,diagram</p>
+	<p>figurecaption:caption for image</p>
+	<figure>
+	    <img src="image/yellowrose.jpg">
+		<figcaption>Fig.1 Yellow rose</figcaption>
+	</figure>
+	
+	
+	
+	
+	<h3>Font tag</h3>
+	<p style="color:red; font-size:35;"> font size, and color of text used in css.</p><hr>
+	
+	
+	
+	<h3>footer tag</h3>
+	<p>A footer element typically contains: authorship information, copyright information, contact information, sitemap, 
+	back to top links, related documents</p><hr>
+	
+	
+	
+    <h3>form tag</h3>
+	<p>form tag is used to create a html form</p>
+	<form>
+	     <fieldset>
+			<label for ="name">Name</label><input type="text"></br></br>
+			<label for="registration no">Reg no</label><input type="text" id="name" size="14"></br></br>
+			<label for="DOB">DOB</label><input type="date" id="birth"></br></br>
+			<label for="email">Email</label><input type="text">
+			<label for="Password">Password</label><input type="password"></br></br>
+			<label>Gender:</label>
+			<label for="Gender"></label>Male<input type="radio"name="Gender" value="male">
+			<label for="Gender"></label>Female<input type="radio" name="Gender" value="Female"></br></br>
+			<label for="Mobile no">Mobile no</label><input type="tel" pattern="[0-9]" id="number"></br></br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	
+	
+	
+	
+	<h3>iframe tag</h3>
+	<p>used to embed another document within the current HTML document</p>
+	<iframe src="https://www.youtube.com/embed/ICIluDh_y3c"></iframe> 
+	
+	
+	
+	<h3>heading tag</h3>
+	<p>used for heading h1 to h6</p>
+	<h1>Heading 1</h1>
+	<h2>Heading 2</h2>
+	<h3>Heading 3</h3>
+	<h4>Heading 4</h4>
+	<h5>Heading 5</h5>
+	<h6>Heading 6</h6>
+	
+	
+	
+	<h3>Head tag</h3>
+	<p>Head tag contains title tag meta tag,style tag, link, script</p>
+	
+	
+	
+	<h3>Header tag</h3>
+	<p>The <header> element represents a container for introductory content or a set of navigational links. A header element typically contains:
+       one or more heading elements (h1 - h6), logo or icon, authorship information, navigation links </p>
+	   
+	   
+	   
+	<h3>hr</h3>
+    <p>hr is defines as horizontal line seperate content</p>
+	<p>HTML- Hyper Text Markup Language</p><hr>
+	<p>CSS-Cascading style sheet</p>
+	
+	
+	<h3>html tag</h3>
+	<p>all elements inside the html tag</p>
+	
+	
+	<h3>i tag</h3>
+	<p>i tag is is often used to indicate a <i>technical term,scientific terms</i></p>
+	
+	
+	<h3>image tag</h3>
+	<p>image tag is used for image</p>
+	<img src="image/yellowrose.jpg" alt="yellow rose" height="200" width="250">
+	
+	
+	<h3>input tag</h3>
+	<p>user can enter data</p>
+	<label for="name">Name:</label><input type="text" id="name" name="name">
+	
+	
+	<h3>insert tag</h3>
+	<p>The ins tag defines a text that has been <ins>inserted into a document</ins>. Browsers will usually underline inserted text.</p>
+	
+	
+	
+	<h3>kbd-keyboard input</h3>
+	<p>The kbd tag is used to define keyboard input.displayed in default monospace font.</p>
+	<p>Press <kbd>ctrl</kbd>+<kbd>S</kbd>
+	
+	
+	
+	<h3>label tag</h3>
+	<label for ="name">Name</label><input type="text">
+	
+	
+	
+	<h3>legend tag</h3>
+	<p>The legend tag defines a caption for the fieldset element.</p>
+	<form>
+	    
+	     <fieldset>
+		    <legend>Application form</legend>
+			<label for ="name">Name</label><input type="text"></br></br>
+			<label for="registration no">Reg no</label><input type="text" id="name" size="14"></br></br>
+			<label for="DOB">DOB</label><input type="date" id="birth"></br></br>
+			<label for="email">Email</label><input type="text">
+			<label for="Password">Password</label><input type="password"></br></br>
+			<label>Gender:</label>
+			<label for="Gender"></label>Male<input type="radio"name="Gender" value="male">
+			<label for="Gender"></label>Female<input type="radio" name="Gender" value="Female"></br></br>
+			<label for="Mobile no">Mobile no</label><input type="tel" pattern="[0-9]" id="number"></br></br>
+			<input type="submit" value="Submit">
+		</fieldset>
+	</form>
+	
+	
+	
+	
+	<h3>list tag</h3>
+	<p>used to create list</p>
+	<p>ol-ordered list(alphabetic or numerical)<br>
+	ul-unordered list(bullet points)</p>
+	<ol start="11">
+	  <li>Html</li>
+	  <li>Css</li>
+	  <li>Javascript</li>
+	</ol>
+
+	<ul type="circle">
+	  <li>Html</li>
+	  <li>Css</li>
+	  <li>Javascript</li>
+	</ul>
+	
+	
+	
+	<h3>link tag</h3>
+	<p>The link tag is most often used to link to external style sheets </p>
+	
+	
+	<h3>main tag</h3>
+	<p>The main tag specifies the main content of a document.</p>
+	
+	
+	
+	<h3>map tag</h3>
+	<p>The map tag defines an area inside an image map (an image map is an image with clickable areas).</p>
+	<img src="image/green.jpg" alt="nature" usemap="#workmap" width="400" height="379">
+    <map name="workmap">
+	  <area shape="circle"  alt="nature" href="https://en.wikipedia.org/wiki/Nature" target="-blank">
+	</map>
+	
+	
+	
+	
+	<h3>mark tag</h3>
+	<p>The mark tag defines text that should be marked or <mark>highlighted.</mark></p>
+	
+	
+	
+	<h3>meta tag</h3>
+	<p> meta tags always go inside the head element, and are typically used to specify character set, page description, keywords, author of the document, and viewport settings. Metadata will not be displayed on the page, but is machine parsable.</p>
+	
+	
+		
+	
+	<h3>meter tag</h3>
+	<p>The meter tag defines a scalar measurement within a known range.</p>
+	<label for="disk_d">Local disk C:</label><meter max="10" value="8"></meter>
+	
+	
+	
+	<h3>nav tag</h3>
+	<p>The nav tag defines a set of navigation links.</p>
+	
+	
+	
+	<h3>no script tag</h3>
+	<p>defines an alterante content to be dispalyed to user that have disabled scripts in theri browser or ave a browser that doesnot support script.</p>
+	<script>document.write("Hello World!")</script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+	
+	
+	
+	<h3>object tag</h3>
+	<p>object tag is used to embed image video  </p>
+	<object data="image/yellowrose.jpg"></object>
+	
+	
+	
+	<h3>option group/option tag</h3>
+	<p>The option tag defines an option in a select list.</p>
+	<p>The optgroup tag is used to group related options in a select element</p>
+	<form>
+		<label for="course">Choose a course:</label>
+		  <select name="course" id="course">
+			<optgroup label="Bsc">
+			  <option value="EVS">EVS</option>
+			  <option value="NANO">NANO</option>
+			</optgroup>
+			<optgroup label="Msc">
+			  <option value="EVS">EVS</option>
+			  <option value="NANO">NANO</option>
+			</optgroup>
+		  </select>
+		  <br><br>
+		  <input type="submit" value="Submit">
+    </form>
+	
+	
+	
+	<h3>output tag</h3>
+	<p>The output tag is used to represent the result of a calculation</p>
+	
+	
+	<h3>p tag</h3>
+	<p>The p tag defines a paragraph. Browsers automatically add a single blank line before and after each p element.</p>
+	
+	
+	<h3>Picture tag</h3>
+	<picture>
+        <source media="(min-width:850px)" srcset="image/green.jpg">
+		<source media="(min-width:665px)" srcset="image/hp.jpg">
+		<img src="image/yellowrose.jpg" alt="Flowers" style="width:auto;">
+	</picture>
+	
+	
+	<h3>param tag</h3>
+	<object data="backgroundmusic.mp3">
+    <param name="autoplay" value="true">
+    </object>
+	
+	
+			
+
 	
 	
 </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
