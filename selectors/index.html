@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+	<style>
+	 *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+	.earth{
+        font-size:20px;
+		color:red;
+        }	
+	#earth{
+	color:blue;
+	}
+	
+	a:visited{
+	    color:green;
+	}
+	.first::first-line{
+            color:orange;
+        }
+    .para::first-letter{
+            color:red;
+            font-size:30px;
+        }
+	.hover:hover{
+        color:yellow;
+		cursor:pointer;
+    }	
+	a:active{
+	    background-color:yellow;
+	}
+    h5::before{
+	    content:"29.10.1999";
+	}
+	h4::after{
+	    content:"29.10.1999"; 
+	}
+	.combinator p {
+	    color:green;
+	}
+	.child >p{
+	    color:blue;
+	}
+	.adjacent +p{
+	    color:purple;
+	}
+	.general ~p{
+	    color:pink;
+	}
+    .att a[target] {
+    background-color: yellow;
+	}
+		.value a[target="_blank"] {
+	  background-color:red;
+	}
+	.anchor [class~="star"]{
+		font-size:30px;
+		border:1px solid orange;
+	}
+	.top [class|=h] {
+	  color:green;
+	}
+	[class^="n"] {
+	  background: yellow;
+	}
+	.book [class$=book]{
+		color:blue;
+	}
+	.global [class*="s"]{
+		 color:red;
+	}
+	</style>
+	</head>
+	<body>
+	    <section> 
+		    
+			<h1>CSS Selectors</h1>
+			<p>1.Simple selector</p>
+			<p>2.Combinator selector</p>
+			<p>3.Pseudo-class selector</p>
+			<p>4.Pseudo-element selector</p>
+			<p>5.Attribute selector</p><br><br>
+			
+			
+			
+			<h1>1.SIMPLE SELECTOR</h1>
+			<p>id we use(#), class we use(.), universal or global we use(*)</p>
+			<p class="earth">Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			<p id="earth">Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p><br><br>
+			
+		<section>	
+			<h3>Combinator selector</h3>
+				<p>Descendant selector-(space)</p>
+				<p>Child selector-(>)</p>
+				<p>Adjacent selector-(+)</p>
+				<p>General selector-(~)</p>
+				<p></p>
+			<section class="combinator">
+			    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			
+			    <div>
+				    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				</div>
+				<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				
+			
+			</section>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p><br><br><hr><br><br>
+			
+			<section class="child">
+			    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			
+			    <div>
+				    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				</div>
+				<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			</section>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p></p><br><br><hr><br><br>
+			
+			<section class="adjacent">
+			    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			
+			    <div>
+				    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				</div>
+				<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			</section>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p></p><br><br><hr><br><br>
+			<section class="general">
+			    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			    <div>
+				    <p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+				</div>
+				<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			</section>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+			<p>Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p></p><br><br><hr><br><br>
+		</section>	
+			
+			
+	<h1>Pseudo-class selector</h1>
+			<h3>Link selector</h3>
+			
+			 <a href="https://www.w3schools.com/css/css_selectors.asp">visited link</a> <br><br>   
+			 	
+			<h3 class="hover">Hover</h3><br><br> 
+			
+	<h1>Psuedo-element Selector</h1>
+     
+            <span>:: defines</span>
+     
+				<h3>first-line</h3>
+				<p class="first">Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.Earth is about eight light minutes. Earth is an ellipsoid with a circumference of about 40,000 km. It is the densest planet in the Solar System. Of the four rocky planets, it is the largest and most massive.</p>
+
+				<h3>first-letter</h3>
+				<p class="para">Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.</p>
+				 
+				<h3>Before</h3>
+				<h5>october</h5>
+				
+				<h3>After</h3>
+				<h4>october</h4>
+					
+				<div class="att">
+				    <ul>
+					    <li>attribute</li>
+					    <li>attribute value</li>
+					    <li>(~)</li>
+					    <li>(|)</li>
+					    <li>(^)</li>
+					    <li>($)</li>
+					    <li>(*)</li>
+					</ul>
+					<h3>Attribute selector</h3>
+					<a href="http://www.disney.com" target="_blank">disney.com</a>
+					<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a><br><br>
+				</div>
+				<div class="value">	
+					<h2>atrribute value selector<h2>
+					<a href="http://www.disney.com" target="_blank">disney.com</a>
+					<a href="http://www.wikipedia.org" target="_top">wikipedia.org</a><br><br>
+				</div>
+				<div class="anchor">
+				    <p>this selector is used to select elements with an attribute value containing a specified word(~).</p>
+					<p class="star">Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one  revolution.</p><br><br>
+					<p class="star moon">Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.</p><br><br>
+					<p class="tree">Earth is about eight light minutes away from the Sun and orbits it, taking a year (about 365.25 days) to complete one revolution.</p><br><br>
+				</div>
+				<div class="top">
+				    <p>(|)followed by a hyphen( - )</p>
+	                <h1 class="h1">Name</h1>
+					<p class="h-2">Monisha</p>
+					<p class="h-3">Anitha</p><br><br>
+	            </div>
+				<div class="top">
+				    <p>(^)The following example selects all elements with a class attribute value that starts with "n".
+				    The value does not have to be a whole word!</p>
+	                <h1 class="n">Name</h1>
+					<p class="n-1">Monisha</p>
+					<p class="n-2">Anitha</p><br><br>
+	            </div>
+				<div class="book">
+					<p>($)The following example selects all elements with a class attribute value that ends with "book"</p>
+					<h2 class="firstbook">My first book </h1>
+					<h2 class="second">English fairy tales.</h1>
+					<h2 class="thrid-book">Tamil fairy tales.</h1>
+					<h2 class="fourth">Hindi fairy tales.</h1>
+					<h2 class="five_book">Harry potter stories.</h1>
+				
+				</div><br><hr><br>
+				<div class="global">
+				<p>(*)The following example selects all elements with a class attribute value that contains "s"</p>
+				    <h2 class="mark">Fairy tales 1.</h2>
+					<h2 class="less">Fairy tales 2.</h2>
+					<h2 class="small">Fairy tales 3.</h2>
+					<h2 class="mine">Fairy tales 4.</h2>
+				</div><br></br><hr>
+	    </section>
+	</body>
+	</html>
