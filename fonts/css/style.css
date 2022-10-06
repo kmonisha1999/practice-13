@@ -1,8 +1,9 @@
 	.color{
-	    color:red;
+	    color:yellow;
+		background-color:#FF0000;
 	}
 	.bg{
-	    background-color:yellow;
+	    background-color:rgba(255, 0, 0, 0.1);
 	}
 	.ol{
 		text-decoration: overline;
@@ -21,7 +22,7 @@
 		text-decoration: underline;
 		text-decoration-color: green;
 		text-decoration-style: dotted;
-		text-decoration-thickness:5px;
+		text-decoration-thickness:5px
 	}
 
 	.oul{
@@ -89,19 +90,19 @@ img.sup{
 }
 .upper {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  
   text-shadow: 2px 2px 5px green;
   font-size:25px;
 }
 
 .lower {
   text-transform: lowercase;
-  text-indent: 50px;
+
 }
 
 .cap {
   text-transform: capitalize;
-  word-spacing: 10px;
+  
 }
 
 
