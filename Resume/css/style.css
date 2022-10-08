@@ -2,6 +2,9 @@
 		width:85%;
 		margin:auto;
 	}
+	body{
+		font-family: 'Poppins', sans-serif;
+	}
 	.resume{
 		width:100%;
 		padding-top:50px;
