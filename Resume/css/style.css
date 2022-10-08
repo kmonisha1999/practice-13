@@ -1,0 +1,448 @@
+	.container{
+		width:85%;
+		margin:auto;
+	}
+	.resume{
+		width:100%;
+		padding-top:50px;
+		padding-bottom:100px;
+		box-shadow:0 2px 6px 1px rgb(0 0 0 /20%);
+	}
+	.name{
+		width:100%;
+		text-align:center;
+	}
+	.name h1{
+		font-size:22px;
+		margin-top:50px;	
+		}
+	.name p{
+		font-size:20px;
+	}
+/*Header starts*/
+	@media (min-width:360px){
+			.name h1{
+				font-size:18px;
+			}
+			.name p{
+				font-size:19px;
+			}
+	}
+	@media(min-width:768px){
+			.name h1{
+				font-size:25px;
+			}
+			.name p{
+				font-size:22px;
+			}	
+	}
+	@media(min-width:992px){
+			.name h1{
+				font-size:30px;
+			}	
+			.name p{
+				font-size:25px;
+			}
+	}
+	@media(min-width:1024px){
+			.name h1{
+				font-size:33px;
+			}	
+			.name p{
+				font-size:28px;
+			}
+	}	
+/*Header ends*/
+
+/*section starts*/	
+	 h1{
+		font-size:22px;
+		color:#0000FF;
+	}
+	 p{
+		font-size:18px;
+	}
+	 h2{
+		font-size:20px;
+	}
+	.academic{
+		padding-top:30px;
+	}
+	.skd{
+		padding-top:30px;
+	}
+	.skill{
+		border:1px solid black;
+		display:flex;
+	}
+	.front{
+		width:70%;
+		border-right:1px solid black;
+	}
+	.front h2, p{
+		margin-left:20px;
+	}
+	.boot h2, li{
+		margin-left:20px;
+	}
+	.year{
+		width:30%;
+	}
+	.year p{
+		text-align:center;
+		margin:50px;
+	}
+	.boot{
+		border:1px solid black;
+	}
+	ul{
+		list-style-type:disc;
+	}
+	li{
+		font-size:18px;
+	}
+	.tech{
+		width:100%;
+		margin-top:10px;
+		padding-bottom:100px;
+		padding-top:50px;
+		box-shadow:0 2px 6px 1px rgb(0 0 0 /20%);
+	}
+	.code{
+		width:100%;
+		display:flex;
+	}
+	.core{
+		width:40%;
+	}
+	.git{
+		width:40%;
+	}
+	.code h4{
+		font-size:18px;
+		color:#C71585;
+	}
+	.code p{
+		font-size:20px;
+	}
+	.project{
+		margin-top:50px;	
+	}
+	.project h4{
+		font-size:22px;
+	}
+	.project p{
+		font-size:23px;
+	}
+	.project li{
+		font-size:23px;
+	}
+	.folio{
+		width:100%;
+		border:1px solid black;	
+		padding-bottom:20px;
+	}
+	.folio h4, a{
+		margin-left:20px;
+	}
+	.stack h4{
+		margin-left:20px;	
+	}
+	.res h4, li{
+		margin-left:20px;
+	}
+	.stack{
+		width:100%;
+		border:1px solid black;
+	}
+	.res{
+		width:100%;
+		border:1px solid black;
+	}
+	a{
+		font-size:23px;
+	}	
+	.end{
+		margin-top:20px;
+		padding-top:100px;
+		box-shadow:0 2px 6px 1px rgb(0 0 0 /20%);
+		height:200vh;
+	}
+	.dec{
+		border:1px solid black;
+	}
+	.dec h4{
+		font-size:22px;
+		margin-left:px;
+	}
+	.dec li{
+		font-size:23px;
+		margin-left:px;
+	}
+	.true{
+		margin-top:50px;	
+	}
+	.moni{
+		text-align:right;
+	}
+	@media(min-width:360px){
+
+			
+			h1{
+				font-size:16px;
+				color:#0000FF;
+			}
+			p{
+				font-size:15px;
+			}
+			h2{
+				font-size:16px;
+			}
+			.year{
+				width:40%;
+			}
+			li{
+				font-size:15px;
+			}
+			.code{
+				width:100%;
+				display:block;
+			}
+			.core{
+				width:100%;
+			}
+			.git{
+				width:100%;
+			}
+			.code h4{
+				font-size:15px;
+				color:#C71585;
+			}
+			.code p{
+				font-size:18px;
+			}
+			.front h2, p{
+				margin-left:10px;
+			}
+			.boot h2, li{
+				margin-left:10px;
+			}
+			.project h4{
+				font-size:20px;
+			}
+			.project p{
+				font-size:18px;
+			}
+			.project li{
+				font-size:18px;
+			}
+			.folio h4, a{
+				margin-left:10px;
+			}
+			.stack h4{
+				margin-left:10px;	
+			}
+			.res h4, li{
+				margin-left:10px;
+			}
+			.dec h4{
+				font-size:20px;
+				margin-left:10px;
+			}
+			.dec li{
+				font-size:18px;
+				margin-left:10px;
+			}
+			a{
+				font-size:18px;
+			}
+	}
+	@media(min-width:768px){
+			
+			h1{
+				font-size:23px;
+				color:#0000FF;
+			}
+			p{
+				font-size:20px;
+			}
+			h2{
+				font-size:22px;
+			}
+			li{
+				font-size:22px;
+			}
+			.code{
+				width:100%;
+				display:flex;
+			}
+			.core{
+				width:40%;
+			}
+			.git{
+				width:40%;
+			}
+			.code h4{
+				font-size:20px;
+				color:#C71585;
+			}
+			.code p{
+				font-size:22px;
+			}
+			.project h4{
+				font-size:22px;
+			}
+			.project p{
+				font-size:23px;
+			}
+			.project li{
+				font-size:23px;
+			}
+			.front h2, p{
+				margin-left:20px;
+			}
+			.boot h2, li{
+				margin-left:20px;
+			}
+			.folio h4, a{
+				margin-left:20px;
+			}
+			.stack h4{
+				margin-left:20px;	
+			}
+			.res h4, li{
+				margin-left:20px;
+			}
+			.dec h4{
+				font-size:22px;
+				margin-left:20px;
+			}
+			.dec li{
+				font-size:23px;
+				margin-left:20px;
+			}
+			a{
+				font-size:23px;
+			}
+	}
+	@media(min-width:992px){
+
+			h1{
+				font-size:28px;
+				color:#0000FF;
+			}
+			p{
+				font-size:24px;
+			}
+			h2{
+				font-size:25px;
+			}
+			li{
+				font-size:25px;
+			}
+			.code h4{
+				font-size:22px;
+				color:#C71585;
+			}
+			.code p{
+				font-size:24px;
+			}
+			.project h4{
+				font-size:24px;
+			}
+			.project p{
+				font-size:24px;
+			}
+			.project li{
+				font-size:24px;
+			}
+			.front h2, p{
+				margin-left:25px;
+			}
+			.boot h2, li{
+				margin-left:25px;
+			}
+			.folio h4, a{
+				margin-left:25px;
+			}
+			.stack h4{
+				margin-left:25px;	
+			}
+			.res h4, li{
+				margin-left:25px;
+			}
+			.dec h4{
+				font-size:20px;
+				margin-left:25px;
+			}
+			.dec li{
+				font-size:24px;
+				margin-left:25px;
+			}
+			a{
+				font-size:24px;
+			}
+	}
+	@media(min-width:1024px){
+			.name h1{
+				font-size:33px;
+			}	
+			.name p{
+				font-size:28px;
+			}
+			h1{
+				font-size:30px;
+			}
+			p{
+				font-size:25px;
+			}
+			h2{
+				font-size:28px;
+			}
+			li{
+				font-size:28px;
+			}
+			.code h4{
+				font-size:25px;
+				color:#C71585;
+			}
+			.code p{
+				font-size:28px;
+			}
+			.project h4{
+				font-size:25px;
+			}
+			.project p{
+				font-size:28px;
+			}
+			.project li{
+				font-size:28px;
+			}
+			.front h2, p{
+				margin-left:30px;
+			}
+			.folio h4, a{
+				margin-left:30px;
+			}
+			.stack h4{
+				margin-left:30px;	
+			}
+			.res h4, li{
+				margin-left:30px;
+			}
+			.boot h2, li{
+				margin-left:30px;
+			}
+			.dec h4{
+				font-size:25px;
+				margin-left:30px;
+			}
+			.dec li{
+				font-size:28px;
+				margin-left:30px;
+			}
+			a{
+				font-size:28px;
+			}
+	}
+/*section ends*/
