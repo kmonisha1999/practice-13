@@ -1,0 +1,22 @@
+.heading{
+    text-align:center;
+	margin-top:50px;
+}
+.row{
+	margin-top:30px;
+}
+.card img{
+	height:250px;
+}
+.heading h1{
+	color:#00008B;
+}
+.heading p{
+	color:blue;
+}
+.card-text{
+    color:#2E5984;
+}
+.card-title{
+	color:#00008B;
+}
