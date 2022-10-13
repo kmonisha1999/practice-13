@@ -5,9 +5,7 @@
 .row{
 	margin-top:30px;
 }
-.card img{
-	height:250px;
-}
+
 .heading h1{
 	color:#00008B;
 }
@@ -19,4 +17,7 @@
 }
 .card-title{
 	color:#00008B;
+}
+.icon h3{
+	font-size:1.3rem;
 }
