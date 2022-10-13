@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<title>transition</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		.box{
+		    width:200px;
+			height:200px;
+			border:1px solid red;
+			border-radius:50%;
+			background-color:pink;
+			text-align:center;
+		}
+		.box{
+		    transition-property:width;
+			transition-duration:3s;
+		}
+		.box:hover{
+		    width:300px;
+			background-color:yellow;
+		}
+		.box2{
+		    width:200px;
+			height:200px;
+			background-color:blue;
+		}
+		.box2{
+		    transition-property:height;
+			transition-duration:2s;
+			transition-delay:2s;
+		}
+		.box2:hover{
+		    height:300px;
+			background-color:blue;
+		}
+		.box3{
+		    width:200px;
+			height:200px;
+			background-color:green;
+			transition-property:width;
+			transition-duration:2s;
+			transition-timing-function:ease-out;
+		}
+		
+		.box3:hover{
+		    width:500px;
+		}
+		.box4{
+		    width:200px;
+			height:200px;
+			background-color:purple;
+			transition-property:width;
+			transition-duration:2s;
+			transition-timing-function:cubic-bezier(0.48, 0.0, 0.1, 1.0);
+		}
+		.box4:hover{
+		    width:500px;
+		}
+		
+		</style>
+	</head>	
+	<body>
+	    <div class="">
+	        <h2>transition-property</h2>
+            <h2>transition-duration</h2>
+            
+               <h2>transition-delay</h2> 
+		</div>	
+	    <div class="box">
+            <p>Transition property</p>
+            <p>Transition duration</p>
+        </div>	
+        <div class="box2">
+            <p>Transition delay</p>
+        </div>
+        <h2>transition-timing-function</h2>
+			    <ul>
+					<li>linear-a transition effect with the same speed from start to end</li>
+					<li>ease- transition effect with a slow start, then fast, then end slowly</li>
+					<li>ease-in-transition effect with a slow start</li>
+					<li>ease-out-transition effect with a slow end</li>
+					<li>ease-in-out-a transition effect with a slow start and end</li>
+				</ul>			
+        <div class="box3">
+            <p>Transition-timing-function</p>
+        </div>
+        <div class="box4">
+            <p></p>
+        </div>		
+		
+		
+		
+	</body>
+	</html>
