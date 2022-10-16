@@ -12,12 +12,9 @@
 	margin-top:40px;
 }
 .card{
-	align-items:center;
 	margin:auto;
 	padding-top:30px;
 	padding-bottom:30px;
-	text-align:center;
-	box-shadow:0 0 12px #8888884a;
 	border:none;
 }
 .card p{
@@ -37,13 +34,14 @@
 .card ul li {
 	list-style:none;
 	padding:10px;
-	text-align:center;
 	font-size:1rem;
 }
 .card a{
+	width:50%;
+	text-align:center;
 	text-decoration:none;
 	border-radius:3rem;
-	padding:5px 25px 5px 25px;
+	padding:5px 15px 5px 15px;
 	display:inline;
 	border:1px solid blue;
 }
