@@ -25,6 +25,7 @@ body{
 }
 .topbar iconify-icon{
 	color:#428bca;
+	font-size:16px;
 }
 .media{
 	display:none;
@@ -57,6 +58,7 @@ body{
 	padding-top:10px;
 	color:#1c5c93;
 }
+
 @media(min-width:768px){
 	.topbar{
 		width:50%;
@@ -71,14 +73,12 @@ body{
 		color:#1c5c93;
 		padding:10px;
 	}
-	
 }
 @media(min-width:1024px){
 	.topnav ul, li{
 		display:block;
 		display:flex;
-		padding:10px;
-		
+		padding:10px;	
 	}
 	.topnav a{
 		text-decoration:none;
@@ -93,10 +93,24 @@ body{
 .slide{
 	background-image:url("slide.jpg");
 	width:100%;
-	height:80vh;
+	height:70vh;
 	background-size:cover;
+	background-position:center;
 	background-attachment:fixed;
+	position:relative;
+	z-index:0;
 }
+.slide::after{
+		content:"";
+		background-color:rgba(0,0,0,0.8);
+		opacity:0.7;
+		position:absolute;
+		top:0;
+		bottom:0;
+		right:0;
+		left:0;
+		z-index:-1;
+			}
 .home{
 	margin:auto;
 }
@@ -104,15 +118,15 @@ body{
 	font-size:;
 	color:black;
 	font-family:arial;
-	line-height:1.5;
-	padding-top:2rem;
+	line-height:1;
+	color:white;
 }
 .welcome h1{
 	font-size:1.5rem;
 	font-weight:800;
 	padding-top:1rem;
+	color:white;
 }
-
 .read{
 	margin-top:1rem;
 }
@@ -123,9 +137,7 @@ body{
 		padding:5px 20px 5px 20px;
 		color:white;
 }
-
-@media(min-width:768px){
-	
+@media(min-width:768px){	
 	.read a{
 			width:10%;
 			text-decoration:none;
@@ -134,20 +146,50 @@ body{
 			color:white;
 			
 	}
+	.read{
+		margin-top:30px;
+	}
+	.welcome p{
+		font-size:18px;
+		color:black;
+		font-family:arial;
+		line-height:1;
+		color:white;
+		margin-top:20px;
+	}
+	.welcome h1{
+		font-size:1.5rem;
+		font-weight:800;
+		padding-top:2rem;
+		color:white;
+		
+	}
 }
 @media(min-width:1024px){
 	.welcome h1{
 		font-size:3rem;
 		font-weight:800;
+		padding-top:3rem;
 	}
-	
+	.welcome{
+		padding-top:3rem;
+	}
+	.read{
+		margin-top:40px;
+	}
+	.welcome p{
+		font-size:20px;
+		width:60%;
+		color:black;
+		font-family:arial;
+		line-height:1;
+		color:white;
+		line-height:1.5;
+		margin-top:20px;
+	}
 }
-
-
-
 /* Home section ends*/
 /* about section starts*/
-
 .about{
 	padding-top:3rem;
 	line-height:1.5;
@@ -178,7 +220,6 @@ body{
 }
 .abtp{
 	width:75%;
-	
 }
 .lorem iconify-icon{
 	
@@ -187,7 +228,6 @@ body{
 	color:#428bca;
 	background-color:#f1f7fb;
 }
-
 .abtp h3{
     font-size:1.1rem;
 	font-weight:600;
@@ -265,7 +305,6 @@ body{
 			width:100%;
 			display:flex;
 			flex-wrap:wrap;
-			justify-content:;
 		}
 	}
 	@media(min-width:1024px){
@@ -321,12 +360,10 @@ body{
 			display:flex;
 			flex-wrap:wrap;
 			justify-content:space-between;
-			
 		}
 		.num1{
 			width:42%;
 		}
-		
 		.num1 p{
 			font-size:16px;
 		}
@@ -413,7 +450,6 @@ body{
     .btn{
 		margin:20px 0px 20px 0px;
 		text-align:center;
-		
 	}
 	.btn a{
 		font-size:15px;
@@ -455,30 +491,50 @@ body{
 	.leader{
         margin-top:20px;
 	}	
-    .meminfo{
+    .meminfo{ 
 	    width:60%;
 		margin:auto;
        border:1px solid black;
 	   text-align:center;
 	   padding:15px 0px 15px 0px;
-	   position:absolute;
+	   position:relative;
 	   z-index:1;
-	   left:20px;
-	   right:20px;
 	   margin-top:-80px;
 	   line-height:2;
 	   background-color:silver;
 	}	
     .mem1{
-        margin-top:100px;
+        margin-top:50px;
+	}	
+    .mem{
+        
+		display:block;
 	}		
 }
 @media(min-width:768px){
+	.mem1{
+		width:45%;
+	}
+	.mem1 img{
+		width:100%;
+	}
+	.mem{
+		display:flex;
+	}
 	
 }
 @media(min-width:1024px){
-	
-	
+    .mem1{
+		width:24%;
+		margin-top:20px;
+	}
+	.mem1 img{
+		width:100%;
+	}
+	.mem{
+		display:flex;
+		justify-content:space-between;
+	}
 }
 /* team section ends */
 /* faq section starts */
@@ -545,7 +601,7 @@ body{
 		font-size:35px;
 		border-radius: 50%;
 		padding: 8px;
-		border: 2px dotted #9eccf4;;
+		border: 2px dotted #9eccf4;
 		color:#428bca;	
 	}
 	.ouraddress h3{
@@ -570,14 +626,20 @@ body{
 	}
 	.formname input{
 		width:100%;
-		padding:10px;
+		padding:5px;
+		margin-top:20px;
+		border-color:1px solid silver;
+	}
+	.jet input{
+		width:100%;
+		padding:5px;
 		margin-top:20px;
 		border-color:1px solid silver
 	}
 	.formmsg textarea{
 		margin-top:10px;
 		width:100%;
-		border-color:silver;
+		border-color:1px solid silver;
 	
 	}
 	.sm{
@@ -609,10 +671,21 @@ body{
 		display:flex;
 		justify-content:space-between;
 	}
+	.formname{
+		display:flex;
+		justify-content:space-between;
+	}
 	.formname input{
-		width:100%;
+		width:45%;
 		border:1px solid silver;
 		padding:15px;
+		font-size:18px;
+	}
+	.jet{
+		width:98%;
+	}
+	.jet input{
+		padding-top:10px;
 		font-size:18px;
 	}
 	.formmsg textarea{
@@ -629,20 +702,20 @@ body{
 	background-color:#5c768d;
 	color:white;
 }
-.call h1{
+.call1 h1{
 	font-size:20px;
 	font-weight:600;
 }
-.call h3{
+.call1 h3{
 	font-size:18px;
 	margin-top:20px;
 }
-.call p{
+.call1 p{
 	font-size:18px;
 	margin-top:20px;
 }
 
-.call iconify-icon{
+.call1 iconify-icon{
 	font-size:20px;
 	margin-top:20px;
 	padding:10px;
@@ -652,7 +725,7 @@ body{
 }
 .useful ul, li{
 	display:block;
-		padding:10px;
+	padding:10px;
 }
 .useful{
 	margin-top:20px;
@@ -667,7 +740,6 @@ body{
 .useful a{
 	text-decoration:none;
 	color:white;
-
 	font-size:15px;
 }
 .news{
@@ -691,9 +763,10 @@ body{
 } 
 @media(min-width:768px){
 	
+	
 }
 @media(min-width:1024px){
-	.call{
+	.call1{
 		width:25%;
 		margin-top:20px;
 	}
