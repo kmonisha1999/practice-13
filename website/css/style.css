@@ -21,12 +21,14 @@ body{
 .topbar{
 	width:100%;
 	display:flex;
+	justify-content:space-around;
 	font-size:1rem;
 	padding:20px;
+	
 }
 .topbar iconify-icon{
 	color:#428bca;
-	font-size:16px;
+	font-size:12px;
 }
 .topbar span{
 	font-size:12px;
@@ -34,6 +36,7 @@ body{
 .media{
 	display:none;
 }
+
 .topnav{
 	display:flex;
 	justify-content:space-between;
@@ -210,8 +213,9 @@ body{
 }
 .ai iconify-icon{
 	font-size:35px;
-	margin-top:20px;
+	margin-top:px;
 	color:white;
+	margin:auto;
 }
 
 .abtimg {
@@ -219,19 +223,19 @@ body{
 }
 .ai{
 	position:absolute;
-	bottom:50%;
-	right:45%;
 	background-color:#428bca;
+	width:4rem;
+	height:4rem;
+	border-radius:50%;
+	border:10px solid #c0d3e6;
 	color:white;
 	font-weight:700;
 	display:flex;
 	justify-content:center;
 	align-items:center;
-	width:5rem;
-	height:5rem;
-	border-radius:50%;
-	border:10px solid #c0d3e6;
-	
+	top:35%;
+    left:35%;
+	margin:auto;
 }
 
 .us h1{
@@ -263,11 +267,14 @@ body{
 	height:70px;
 	text-align:center;
 	background-color:#f1f7fb;
+	display:flex;
+		align-items:center;
+		justify-content:center;
 }
 .abticon iconify-icon{
 	font-size:1.8rem;
 	color:#428bca;
-	margin-top:17px;
+	
 }
 .abticon:hover{
 	background-color:#428bca;
@@ -286,6 +293,7 @@ body{
 .abtp p{
 	font-size:0.8rem;
 }
+
 @media(min-width:768px){
 	.abtimg{
 		width:48%;
@@ -299,22 +307,27 @@ body{
 	}
 	.ai iconify-icon{
 	font-size:35px;
-	margin-bottom:18px;
+	margin-bottom:px;
 	color:white;
 }
-.ai{
-	height:70px;
-	width:70px;
-	border-radius:50%;
-	text-align:center;
-	position:absolute;
-	top:0;
-	margin-left:100px;
-	margin-top:140px;
-	background-color:#428bca;
-}
-.abtimg{
+.abtimg {
 	position:relative;
+}
+.ai{
+	position:absolute;
+	background-color:#428bca;
+	color:white;
+	font-weight:600;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:4rem;
+	height:4rem;
+	border-radius:50%;
+	border:10px solid #c0d3e6;
+	top:30%;
+    left:35%;
+	margin:auto;
 }
 	
 }
@@ -329,20 +342,25 @@ body{
 	.abtp p{
 		font-size:15px;
 	}
-	.ai{
-		height:70px;
-		width:70px;
-		border-radius:50%;
-		text-align:center;
-		position:absolute;
-		top:0;
-		margin-left:150px;
-		margin-top:180px;
-		background-color:#428bca;
-	}
-	.abtimg{
-		position:relative;
-	}
+	.abtimg {
+	position:relative;
+}
+.ai{
+	position:absolute;
+	background-color:#428bca;
+	color:white;
+	font-weight:700;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:5rem;
+	height:5rem;
+	top:40%;
+    left:40%;
+	border-radius:50%;
+	border:10px solid #c0d3e6;
+	margin:auto;
+}
 }
 /* about section ends*/
 /* six box section starts*/
@@ -484,11 +502,13 @@ body{
 			width:60px;
 			border-radius:50%;
 			margin:auto;
+		    display:flex;
+	    	align-items:center;
+		    justify-content:center;
 			box-shadow: 0px 0 25px rgb(0 0 0 / 15%);
 		}
 		.sericon iconify-icon{
 			font-size:30px;
-			margin-top:15px;
 			color: #428bca;
 		}
 		.sericon:hover{
@@ -580,24 +600,27 @@ body{
 		left:0;
 		text-align:center;
 		background-color:#0000009e;
+		line-height:2;
 	}
 	.folio h1{
-		padding-top:5.5rem;
+		padding-top:4rem;
 	}
 	.folio{
 		color:white;
-		line-height:2;
+		
 	}
 	.pi:hover .folio{
 		opacity:1;
 		transition:1s ease-in;
 	}
+	
 	.folio iconify-icon{
-		font-size:15px;
+		font-size:20px;
+		color:black;
+		gap:20px;
 		border-radius:50%;
 		padding:10px;
 		background-color:white;
-		color:skyblue;
 	}
 	.folio iconify-icon:hover{
 		background-color:#0d6efd;
@@ -664,6 +687,7 @@ body{
 			right:0;
 			text-align:center;
 			background-color:#0000009e;
+		
 		}
 		.folio h1{
 			padding-top:4rem;
@@ -723,18 +747,22 @@ body{
 		   z-index:1;
 		   margin-top:-70px;
 		   background-color:#587187c4;
+		   
 	}
 	.teaminfo h4{
 		font-weight:700;
 		font-size:16px;
+		color:white;
 	}
 	.teaminfo p{
 		margin-top:10px;
 		font-style:italic;
 		font-size:15px;
+		color:white;
 	}
 	.social iconify-icon{
 		margin-top:10px;
+		color:white;
 	}
 	
 @media(min-width:768px){
@@ -884,16 +912,19 @@ body{
 	}
 	.dd{
 		height:60px;
-		width:50px;
+		width:60px;
 		border-radius:50%;
 		border:1px solid black;
 		border: 2px dotted #9eccf4;
 		margin:auto;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		
 	}
     .dd iconify-icon{
 		font-size:35px;
 		color:#428bca;	
-		margin-top:13px;
 	}
 	.ouraddress h3{
 		font-size:20px;
@@ -931,6 +962,7 @@ body{
 		margin-top:20px;
 		height:50px;	
 		width:100%;
+		font-family:'Raleway', sans-serif;
 		border:1px solid silver;
 	}
 	.sm{
@@ -938,7 +970,6 @@ body{
 		text-align:center;
 	}
 	.sm a{
-		
 		padding:10px 20px 10px 20px;
 		text-decoration:none;
 		background-color:#428bca;
@@ -967,8 +998,6 @@ body{
 		width:100%;
 		height:35px;
 	}
-	
-	
 }
 @media(min-width:1024px){
 	.ouraddress{
@@ -987,6 +1016,7 @@ body{
 		width:48%;
 		border:1px solid silver;
 		font-size:16px;
+		height:45px;
 	}
 	.jet{
 		width:98%;
@@ -994,6 +1024,7 @@ body{
 	.jet input{
 		width:100%;
 		font-size:16px;
+		height:45px;
 	}
 	.formmsg{
 		width:98%
@@ -1103,7 +1134,7 @@ body{
 		font-size:15px;
 	}
 	.call1 iconify-icon:hover{
-		background-color:skyblue;
+		background-color:#007aff;
 	}
 	.useful h4{
 		font-size:18px;
