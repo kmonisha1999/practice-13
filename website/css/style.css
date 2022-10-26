@@ -712,15 +712,15 @@ body{
 	.teamimg{
 	    width:100%;
 		overflow:hidden;
+		position:relative;
 	}
     .teamimg img{
 	    width:100%;
-		margin-top:30px;
-		transition:all 1s ease;
+		margin-top:30px;		
 	}
-
 	.teamimg:hover img{
 		transform:scale(1.1);
+		transition:all 1s ease;
 	}
 	.tm{
 	    width:100%;
@@ -1153,7 +1153,7 @@ body{
     .footer{
 		padding-top:30px;
 		padding-bottom:30px;
-		background-color:#5c768d;
+		background-color:#5c768df2;
 		color:white;
 	}
 	.copy{
