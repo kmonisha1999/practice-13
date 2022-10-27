@@ -1,19 +1,8 @@
-*{
-	margin:0;
-	padding:0;
-	box-sizing:border-box;
-}
+
 body{
 	font-family:'Raleway', sans-serif;
 }
-.top{
-	position:fixed;
-	top:0;
-	right:0;
-	bottom:0;
-	left:0;
-	z-index:1;
-}
+
 .logo a{
 	font-size:30px;
 	color:#7a6960;
@@ -21,7 +10,9 @@ body{
 .nav a{
 	font-size:15px;
 }
-
+.alink:hover{
+	color: #eb5d1e;
+}
 .gs{
 	background-color:#eb5d1e;
 	border-radius:20px;
@@ -147,17 +138,16 @@ body{
 }
 
 .s1 h3{
-	font-size:20px;
+	font-size:19px;
 	font-weight:600;
+	
 }
 .s1 p{
-	font-size:17px;
-	padding-top:15px;
+	font-size:16px;
 	line-height:2;
 }
 .s1 iconify-icon{
 	font-size:45px;
-	padding-top:15px;
 	color:#eb5d1e;
 }
 .s1:hover{
@@ -165,46 +155,32 @@ body{
 }
 .pb{
 	text-align:center;
+	margin:30px 0px 30px 0px;
 }
 .pb a{
 	padding:10px;
 	text-decoration:none;
 	color:black;
 	font-weight:600;
+	cursor:pointer;
 }
+
 .pb a:hover{
 	color:#eb5d1e;
 }
- 
-.app{
-	margin:20px 0px 20px 0px;
-	text-align:center;
-	padding:0.9rem;
-}
-.app a{
-	text-decoration:none;
-	margin-top:3rem;
-	padding:0.7rem;
-	color:black;
-	font-weight:500;
-	font-size:1.3rem;
-}
-.app a:hover{
-	color:#eb5d1e;
-}
+
 .web img{
 	width:100%;
-	border-radius:10px;
 }
 .web1{
-	width:100%;
+	width:100% !important;
 }
 .web1 img{
-	width:100%;
+	width:100% !important;
 }
 .web1{
-	position:relative;
-	margin-top:2rem;
+	position:relative !important;
+	margin-top:20px !important;
 }
 .folio{
 	position:absolute;
@@ -212,14 +188,13 @@ body{
 	right:0;
 	bottom:0;
 	left:0;
-	border:1px solid black;
 	text-align:center;
 	background-color:#0000009e;
-	opacity:0;
+	opacity:0 !important;
 }
 .web1:hover .folio{
-	opacity:1;
-	transition:1s ease-in;
+	opacity: 1!important;
+	transition:1s ease-in !important;
 }
 .folio h3{
 	font-size:1.7rem;
@@ -231,13 +206,12 @@ body{
 	color:white;
 }
 .folio iconify-icon{
-	font-size:1.7rem;
-	padding:0.2rem;
+	font-size:20px;
+	padding:10px;
 	border-radius:50%;
-	border:1px solid black;
 	background-color:white;
 	color:#eb5d1e;
-	margin-top:5rem;
+	margin-top:20%;
 	}
 .folio iconify-icon:hover{
 	background-color:#eb5d1e;
@@ -252,7 +226,7 @@ body{
 	padding-bottom:50px;
 }
 .accordion-item button{
-	font-size:20px;
+	font-size:20px; 
 }
 @media(min-width:368px){
 	.accordion-item button{
@@ -264,25 +238,133 @@ body{
 	font-size:18px;
 }
 }
+/* teams starts */
 .team{
 	padding-bottom:50px;
 }
 .tm{
 	position:relative;
+	width:100%;
 }
 .teaminfo{
+	width:100%;
+	height:auto;
+}
+.teamname{
+	color:white;
+	padding-top:250px;
+	line-height:1.5;
+}
+.teamname h1{
+	font-size:20px;
+	font-weight:;
+}
+.teamname p{
+	font-size:16px;
+	font-style:italic;
+}
+.teamname{
 	position:absolute;
 	opacity:0;
 	top:0;
 	right:0;
 	bottom:0;
 	left:0;
-	background-color:pink;
+	text-align:center;
+	background:#4e403994; 
 }
-.tm:hover .teaminfo{
+.tm:hover .teamname{
 	opacity:1;
-	transition:1s ease-in;
+	transition:1s ease;
 }
+.teamicon{
+	width:50px;
+	display:flex;
+	flex-direction:column;
+	transition:width 0.4s;
+}
+.teamicon{
+	position:absolute;
+	opacity:0;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	background-color:#4e403987;
+}
+.teamicon iconify-icon{
+	padding:15px;
+	font-size:25px;
+	color:white;
+}
+.tm:hover .teamicon{
+	opacity:1;
+}
+.teamicon iconify-icon:hover{
+	color:#ef7f4d;
+}
+@media(min-width:1024px){
+	    .tm{
+			position:relative;
+			width:100%;
+		}
+		.teaminfo{
+			width:100%;
+			height:auto;
+		}
+		.teamname{
+			color:white;
+			padding-top:160px;
+			line-height:1.5;
+		}
+		.teamname h1{
+			font-size:18px;
+			font-weight:600;
+			
+		}
+		.teamname p{
+			font-size:15px;
+			font-style:;
+		}
+		.teamname{
+			position:absolute;
+			opacity:0;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			text-align:center;
+			background:#4e403994; 
+		}
+		.tm:hover .teamname{
+			opacity:1;
+			transition:1s ease;
+		}
+		.teamicon{
+			width:35px;
+			display:flex;
+			flex-direction:column;
+			transition:width 0.4s;
+		}
+		.teamicon{
+			position:absolute;
+			opacity:0;
+			top:0;
+			right:0;
+			bottom:0;
+			left:0;
+			background-color:#4e403987;
+		}
+		.teamicon iconify-icon{
+			padding:10px;
+			font-size:20px;
+			color:white;
+		}
+		.tm:hover .teamicon{
+			opacity:1;
+		}
+}
+/* team ends */
 .clients{
 	background-color:#fef8f5;
 	padding-bottom:50px;
