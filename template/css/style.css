@@ -1,8 +1,6 @@
 
 body{
-	font-family:'Raleway', sans-serif;
-}
-
+	font-family:'Raleway', sans-serif;}
 .logo a{
 	font-size:30px;
 	color:#7a6960;
@@ -115,8 +113,7 @@ body{
 	}
 	.ser h1{
 		font-size:25px;
-	}
-	
+	}	
 }
 @media(min-width:768px){
 	.ser h2{
@@ -125,7 +122,6 @@ body{
 	.ser h1{
 		font-size:30px;
 	}
-	
 }
 .s1{
 	align-items:center;
@@ -136,11 +132,9 @@ body{
 	border:none;
 	box-shadow:0 0 16px rgb(0 0 0/10%);
 }
-
 .s1 h3{
 	font-size:19px;
-	font-weight:600;
-	
+	font-weight:600;	
 }
 .s1 p{
 	font-size:16px;
@@ -164,11 +158,9 @@ body{
 	font-weight:600;
 	cursor:pointer;
 }
-
 .pb a:hover{
 	color:#eb5d1e;
 }
-
 .web img{
 	width:100%;
 }
@@ -220,7 +212,6 @@ body{
 .portfolio{
 	padding-bottom:50px;
 }
-
 .faq{
 	background-color:#fef8f5;
 	padding-bottom:50px;
@@ -257,7 +248,6 @@ body{
 }
 .teamname h1{
 	font-size:20px;
-	font-weight:;
 }
 .teamname p{
 	font-size:16px;
@@ -319,12 +309,10 @@ body{
 		}
 		.teamname h1{
 			font-size:18px;
-			font-weight:600;
-			
+			font-weight:600;			
 		}
 		.teamname p{
 			font-size:15px;
-			font-style:;
 		}
 		.teamname{
 			position:absolute;
@@ -369,8 +357,14 @@ body{
 	background-color:#fef8f5;
 	padding-bottom:50px;
 } 
-.cl{
-	justify-content:sapce-around;
+.png{
+	width:10%;
+}
+.clientimg{
+	justify-content:space-between;
+}
+.png{
+	margin:auto;
 }
 .icon{
 	height:50px;
@@ -401,6 +395,29 @@ body{
 .add{
 	padding-bottom:50px;
 }
+.hold{
+	width:48%;
+}
+.hold input{
+    width:100%;
+	border-radius:0px;
+}
+.sub input{
+	border-radius:0px;
+}
+.sub textarea{
+	border-radius:0px;
+}
+.prime{
+	text-align:center;
+}
+.prime button{
+	background-color:#eb5d1e;
+	border:none;
+}
+.prime button:hover{
+	background-color:#ef7f4d;
+}
 .letter{
     padding-top:50px;
     padding-bottom:50px;
@@ -418,13 +435,14 @@ body{
 	margin-top:20px;
 }
 .mail input{
-	height:40px;
+	height:45px;
 	width:40%;
 }
 .mail a{
 	text-decoration:none;
-	padding:10px 20px 10px 20px;
+	padding:15px 20px 15px 20px;
 	color:white;
+	border-radius:5px;
 	background-color:#eb5d1e;
 }
 .links{
@@ -469,6 +487,9 @@ body{
 }
 .twit iconify-icon{
 	font-size:20px;
+}
+.twit:hover{
+	background-color:#ef7f4d;
 }
 .footer{
     padding-top:30px;
