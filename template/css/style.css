@@ -107,13 +107,22 @@ body{
 	margin:auto;
 	margin-top:15px;
 }
-@media(min-width:368px){
+@media(min-width:375px){
 	.ser h2{
 		font-size:18px;
 	}
 	.ser h1{
 		font-size:25px;
 	}	
+	.ser h1::after{
+		content:"";
+		height:2px;
+		width:15%;
+		background-color:#eb5d1e;
+		display:block;
+		margin:auto;
+		margin-top:15px;
+	}
 }
 @media(min-width:768px){
 	.ser h2{
@@ -121,6 +130,15 @@ body{
 	}
 	.ser h1{
 		font-size:30px;
+	}
+		.ser h1::after{
+		content:"";
+		height:2px;
+		width:10%;
+		background-color:#eb5d1e;
+		display:block;
+		margin:auto;
+		margin-top:15px;
 	}
 }
 .s1{
@@ -169,11 +187,25 @@ body{
 }
 .web1 img{
 	width:100% !important;
+	border-radius:10px;
 }
 .web1{
 	position:relative !important;
 	margin-top:20px !important;
 }
+/* .web1::before{
+    content:"";
+    position:absolute;
+    width:0%;
+    background:#8d808080;
+	top:0;
+	right:0;
+	transition:all 0.4s;
+}
+.web1:hover ::before{
+	width:100%;
+	bottom:0;
+} */
 .folio{
 	position:absolute;
 	top:0; 
@@ -183,11 +215,13 @@ body{
 	text-align:center;
 	background-color:#0000009e;
 	opacity:0 !important;
+	border-radius:10px;
 }
 .web1:hover .folio{
 	opacity: 1!important;
-	transition:1s ease-in !important;
+	transition:1s ease !important;	
 }
+
 .folio h3{
 	font-size:1.7rem;
 	color:white;
@@ -216,18 +250,14 @@ body{
 	background-color:#fef8f5;
 	padding-bottom:50px;
 }
-.accordion-item button{
-	font-size:20px; 
+.accordion-item{
+	background-color:#FEF8F5;
 }
-@media(min-width:368px){
-	.accordion-item button{
-		font-size:16px;
-	}
+.accordion-button{
+	background-color:#FEF8F5;!important;
 }
-@media(min-width:768px){
-	.accordion-item button{
-	font-size:18px;
-}
+.accordion-button:hover{
+	color:#c54811;
 }
 /* teams starts */
 .team{
@@ -497,11 +527,26 @@ body{
 	background-color:#fdf1ec;
 }
 .copy{
+	display:flex;
 	justify-content:space-between;
 }
 .right h1, p{
 	font-size:15px;
 }
+
+@media(min-width:375px){
+	.copy{
+		display:block;
+		text-align:center;
+	}
+}
+@media(min-width:768px){
+	.copy{
+		display:flex;
+		justify-content:space-between;
+	}
+}
+
 
 
 
