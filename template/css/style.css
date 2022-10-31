@@ -9,8 +9,16 @@ body{
 	font-size:15px;
 }
 .alink:hover{
-	color: #eb5d1e;
+	color:#eb5d1e !important;
 }
+/* .top{
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index:3;
+} */
 .gs{
 	background-color:#eb5d1e;
 	border-radius:20px;
@@ -193,11 +201,11 @@ body{
 	position:relative !important;
 	margin-top:20px !important;
 }
-/* .web1::before{
+/*   .web1::before{
     content:"";
     position:absolute;
     width:0%;
-    background:#8d808080;
+    background:#eb5d1e;
 	top:0;
 	right:0;
 	transition:all 0.4s;
@@ -205,7 +213,7 @@ body{
 .web1:hover ::before{
 	width:100%;
 	bottom:0;
-} */
+}  */  
 .folio{
 	position:absolute;
 	top:0; 
@@ -221,15 +229,16 @@ body{
 	opacity: 1!important;
 	transition:1s ease !important;	
 }
-
 .folio h3{
 	font-size:1.7rem;
 	color:white;
 	line-height:2;	
+	cursor:pointer;
 }
 .folio h5{
 	font-size:1.2rem;
 	color:white;
+	cursor:pointer;
 }
 .folio iconify-icon{
 	font-size:20px;
@@ -238,6 +247,7 @@ body{
 	background-color:white;
 	color:#eb5d1e;
 	margin-top:20%;
+	cursor:pointer;
 	}
 .folio iconify-icon:hover{
 	background-color:#eb5d1e;
@@ -387,14 +397,41 @@ body{
 	background-color:#fef8f5;
 	padding-bottom:50px;
 } 
-.png{
-	width:10%;
-}
-.clientimg{
-	justify-content:space-between;
-}
-.png{
+.png img{
 	margin:auto;
+}
+@media(min-width:375px){
+	.png{
+		width:48% !important;
+	}
+	.clientimg{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+}
+@media(min-width:768px){
+	.png{
+		width:30% !important;
+	}
+	.clientimg{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	
+}
+@media(min-width:1024px){
+	.png{
+		width:24% !important;
+	}
+	.clientimg{
+		display:flex;
+		flex-wrap:wrap;
+		justify-content:space-between;
+	}
+	
+	
 }
 .icon{
 	height:50px;
@@ -405,13 +442,23 @@ body{
 	align-items:center;
 	background-color:#fdf1ec;
 }
+.icon:hover{
+	background-color:#ed5d1e;
+}
+.icon:hover iconify-icon{
+	color:white;
+}
 .para{
 	line-height:1.5;
 	margin-left:15px;
 }
+.york{
+	border-top:3px solid #eb5d1e;
+	border-bottom:3px solid #eb5d1e;
+}
 .para h1{
 	font-size:20px;
-	font-weight:600;
+	
 	color:#7a6960;
 }
 .para p{
@@ -465,12 +512,13 @@ body{
 	margin-top:20px;
 }
 .mail input{
-	height:45px;
+	height:40px;
 	width:40%;
+	border:none;
 }
 .mail a{
 	text-decoration:none;
-	padding:15px 20px 15px 20px;
+	padding:12px 15px 12px 15px;
 	color:white;
 	border-radius:5px;
 	background-color:#eb5d1e;
