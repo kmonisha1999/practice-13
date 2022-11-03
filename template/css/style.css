@@ -283,7 +283,7 @@ body{
 }
 .teamname{
 	color:white;
-	padding-top:250px;
+	padding-top:80%;
 	line-height:1.5;
 }
 .teamname h1{
@@ -344,7 +344,7 @@ body{
 		}
 		.teamname{
 			color:white;
-			padding-top:160px;
+			padding-top:75%;
 			line-height:1.5;
 		}
 		.teamname h1{
@@ -400,39 +400,7 @@ body{
 .png img{
 	margin:auto;
 }
-@media(min-width:375px){
-	.png{
-		width:48% !important;
-	}
-	.clientimg{
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:space-between;
-	}
-}
-@media(min-width:768px){
-	.png{
-		width:30% !important;
-	}
-	.clientimg{
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:space-between;
-	}
-	
-}
-@media(min-width:1024px){
-	.png{
-		width:24% !important;
-	}
-	.clientimg{
-		display:flex;
-		flex-wrap:wrap;
-		justify-content:space-between;
-	}
-	
-	
-}
+
 .icon{
 	height:50px;
 	width:50px;
@@ -581,7 +549,9 @@ body{
 .right h1, p{
 	font-size:15px;
 }
-
+.right span{
+	cursor:pointer;
+}
 @media(min-width:375px){
 	.copy{
 		display:block;
