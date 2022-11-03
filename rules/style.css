@@ -1,0 +1,57 @@
+@import url("import.css");
+@charset "UTF-8";
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+
+.container{
+    width:85%;
+	margin:auto;
+}
+
+.rules{
+  width: 250px;
+  height: 250px;
+  border-radius:20px;
+  background: pink;
+  text-align:center;
+  position: relative;
+  animation:move 5s infinite;
+}
+.rules h3{
+	padding-top:70px;
+}
+@keyframes move {
+  from{
+	  top:0px;
+	  }
+  to {
+	  top: 300px;
+	  background-color:orange;
+	  }
+}
+.imp{
+	margin-top:300px;
+	
+	font-size:22px;
+}
+h3{
+	color:red;
+}
+.imp h3{
+    color:blue !important;
+	
+}
+
+@font-face {
+  font-family:Poppins-Regular;
+  src: url(Poppins-Regular.ttf);
+}
+.imp{
+	font-family:Poppins-Regular;
+}
+.color{
+	color:blue;
+}
