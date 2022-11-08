@@ -42,20 +42,54 @@
 	table()
 	document.write("<br>")
     
-	//abc pattern
-	// for(i=65; i<=73; i++){
-	    //for(j=65; j<=i; j--)
-		//{
-		  //  document.write("&nbsp")
-		//}
-		//for(k=65; k<=i; k++){
-		  //  if(i%2==0){
-			//    continue;
-			//}
-			//document.write(String.fromCharCode(j))
-		
-	//} 
+	// abc pattern
+	     <!-- for(i=65;i<=73;i++){
+           <!-- for(k=72;k>=i;k--){ -->
+                 <!-- document.write("&nbsp");     -->
+             <!-- } -->
+             <!-- for(j=65;j<=i;j++){ -->
+                 <!-- if(i%2==0){ -->
+                    <!-- continue; -->
+                <!-- } -->
+                <!-- document.write(String.fromCharCode(j));  -->
+           <!-- } -->
+            <!-- document.write("<br>"); -->
+		<!-- } --> -->
+
+	//Armstrong number		
+			let e, x, d =0
+			let b=153;
+			x=b;
+        while (x>0){
+		    e=x%10;
+			x=Math.floor(x/10);
+			d=d+(e*e*e);
+		}
+		if(b==d){
+		    document.write("Armstrong number")
+		}
+        else{
+		    document.write("Not Armstrong number")
+		}
+		 document.write("<br>");
+    
+	//factorial
 	
+	function factorial(n){
+	  let answer = 1;
+	  if (n == 0 || n == 1){
+		return answer;
+	  }
+	  else{
+		for(i=n; i>= 1; i--){
+		  answer = answer * i;
+		}
+		return answer;
+	  }  
+	}
+	let n = 3 ;
+	answer = factorial(n)
+	document.write(answer);
 
 
 
