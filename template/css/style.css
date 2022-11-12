@@ -11,6 +11,9 @@ body{
 .alink:hover{
 	color:#eb5d1e !important;
 }
+.logo a{
+	letter-spacing:4px;
+}
 /* .top{
 	position:fixed;
 	top:0;
@@ -27,6 +30,16 @@ body{
 .homeimg img{
 	width:100%;
 	height:auto;
+	position:relative;
+	animation:move 3s infinite;
+}
+@keyframes move {
+  from{
+	top:0px;
+	}
+  to{
+	top: 40px;
+	}
 }
 .home{
 	background-color:#fef8f5;
@@ -154,6 +167,8 @@ body{
 	text-align:center;
 	padding-bottom:30px;
 	padding-top:30px;
+	padding-right:15px;
+	padding-left:15px;
 	border-radius:15px;
 	border:none;
 	box-shadow:0 0 16px rgb(0 0 0/10%);
@@ -301,7 +316,7 @@ body{
 	bottom:0;
 	left:0;
 	text-align:center;
-	background:#4e403994; 
+	background:linear-gradient(0deg, rgba(78, 64, 57,0.95)0%, rgba(78, 64,57,0.95)15%, rgba(255, 255, 255, 0)100%); 
 }
 .tm:hover .teamname{
 	opacity:1;
@@ -362,7 +377,6 @@ body{
 			bottom:0;
 			left:0;
 			text-align:center;
-			background:#4e403994; 
 		}
 		.tm:hover .teamname{
 			opacity:1;
