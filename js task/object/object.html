@@ -7,14 +7,14 @@
 	</head>
 <body>
 <script>
-    let details=
-	{
-	    name:"K.Monisha",
-		age: 22,
-		profession:"Environmental science"
-	}
-	document.write(JSON.stringify(details));
-	document.write("<br>")
+    <!-- let details= -->
+	<!-- { -->
+	    <!-- name:"K.Monisha", -->
+		<!-- age: 22, -->
+		<!-- profession:"Environmental science" -->
+	<!-- } -->
+	<!-- document.write(JSON.stringify(details)); -->
+	<!-- document.write("<br>") -->
 	
 	let chocolate=
 	{
@@ -158,6 +158,39 @@
 	document.write(JSON.stringify(pet))
 	
 	
+	<!-- for in -->
+	 
+    const details={
+        name: "Monisha.K",
+		age:22,
+		qualification:"Master degree",
+        Profession:"Environmental science",}
+		for(let me in details){  
+		    console.log(me); 
+			<!-- returns key -->
+		}
+		const add={
+        name: "Monisha.K",
+		age:22,
+		qualification:"Master degree",
+        Profession:"Environmental science",}
+		for(let me in add){  
+		    
+			<!-- returns key and value -->
+			console.log(me + ":" + add[me])
+		}
+		<!-- for of -->
+		const color=["red","blue","pink","white","black"]
+		for(let col of color){
+            console.log(col);
+        }	
+		<!-- for in -->
+        const num=["red","blue","pink","white","black","green"]
+		for(let col in  num){
+            console.log(col);
+			<!-- console.log(num[col]); -->
+        }			
+    	
 </script>
 </body>
 </html>
