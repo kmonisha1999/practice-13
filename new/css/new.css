@@ -1,0 +1,152 @@
+.container{
+	width:90%;
+	margin:auto;
+}
+.home{
+	background-image:url(download.jpeg);
+	height:80vh;
+	width:100%;
+	background-size:cover;
+	background-position:center;
+}
+.name{
+	color:white;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin-top:10%;
+	font-size:1.5rem;
+	line-height:2;
+	font-weight:bold;
+}
+.top{
+	z-index:1;
+}
+.crop{
+	padding-left:8px;
+}
+.green{
+	color:green;
+}
+.blue{
+	color:#0014a8;
+}
+.myself{
+    width:270px;
+	height:270px;
+}
+.topnav{
+	position:fixed;
+	top:0;
+	left:0;
+	right:0;
+	
+}
+@media(min-width:1024px){
+	.name{
+		font-size:2rem;
+	}
+	.topnav{
+		padding:15px;
+	}
+}
+.myself img{
+	
+	height:270px;
+	width:100%;
+	border:5px solid rgb(8,121,246);
+}
+.img h1{
+	font-size:2rem;
+	font-weight:700;
+	color:#FF007F;
+	text-align:center;
+	margin-top:30px;
+}
+
+.para{
+	font-size:1.5rem;
+	color:rgb(8,121,246);
+}
+.details{
+	line-height:2;
+}
+.about{
+	padding-bottom:30px;
+	background-color:#fef8f5;
+}
+
+.details span{
+	font-weight:700;
+	font-size:1.3rem;
+}
+.details p{
+	font-size:1.3rem;
+}
+.icon iconify-icon{
+	font-size:2rem;
+	
+}
+@media(min-width:768px){
+	.details span{
+		font-size:1.1rem;
+		font-weight:bold;
+	}  
+    .details p{
+		font-size:1rem;
+	}	
+}
+@media(min-width:1024px){
+	.details span{
+		font-size:1.3rem;
+		font-weight:bold;
+	}  
+    .details p{
+		font-size:1.2rem;
+	}	
+}
+.skills h1{
+	font-size:2rem;
+	font-weight:700;
+	color:#FF007F;
+	text-align:center;
+	margin-top:30px;
+}
+.skills p{
+	font-size:1.5rem;
+	text-align:center;
+	color:rgb(8,121,246);
+}
+.sk{
+	background-color: #f1f7fb;
+}
+.resume{
+	background-color:#fef8f5;
+	
+}
+.card-header{
+	font-size:1.2rem;
+	font-weight:700;
+}
+.card-body{
+	text-align:center;
+}
+.card-body iconify-icon{
+	font-size:2rem;
+	display:flex;
+	justify-content:center;
+}
+.card-body h5{
+	font-size:1.4rem;
+	font-weight:bold;
+	color:#FF007F;
+}
+.card-body p{
+	font-size:1.3rem;
+	color:gray;
+}
+.res{
+	font-weight:bold;
+	color:gray;
+}
