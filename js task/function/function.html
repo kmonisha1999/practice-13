@@ -6,6 +6,7 @@
     <title>function</title>
 </head> 
 <body>
+    <h3>Array</h3>
     <script>
 	    <!-- var a=20; -->
 	    <!-- var b=10; -->
@@ -47,12 +48,7 @@
 		
 		<!-- console.log(x) -->
 		
-		<!-- var y= { -->
-			    <!-- name:"Monisha", -->
-				<!-- DOB:29101999, -->
-				<!-- qualification:"Master degree" -->
-			<!-- } -->
-		<!-- console.log(y) -->
+		
 		
 		
 		<!-- let arr = [1,8,5,10,15]; -->
@@ -70,25 +66,60 @@
 		
 		//vowels
 		
-		let a="monisha"; b=0; vow="aeiou"
+		let a="shanmugapiriya"; b=0; vow="aeiou"
         
-        for(i=0; i<a.length; i++){
-            for(j=0; j<vow.length; j++){
-			    if(a[i]==vow[j]){
-				    b++
+        for(i=0; i<a.length; i++)
+			{
+				for(j=0; j<vow.length; j++)
+				{
+					if(a[i]==vow[j])
+					{
+						b++
 					}
-			}
-        }	
-        if(b){
-            document.write("string has vowels")
-        }	
-        else{
-            documwnt.write("no vowels")
-        }		
-		<!-- console.log(b) -->
+				}
+			}	
+        if(b)
+			{
+				document.write("string has vowels")
+			}	
+        else
+			{
+				document.write("no vowels")
+				
+			}	
+            document.write("<br>")			
+		    <!-- document.write("string contains "+  b + " vowels") -->
 		
+		var y= [
+				{
+					name:"Monisha",
+					DOB:1999,
+					qualification:"Master degree"
+				},
+				{
+					name:"abi",
+					DOB:2000,
+					qualification:"Master degree"
+				},
+				{
+					name:"ranju",
+					DOB:2001,
+					qualification:"Master degree"
+				}
+			
+			]
+		<!-- document.write(JSON.stringify(y)) -->
+		<!-- console.log(y) -->
+		<!-- console.log(y.length) -->
+		<!-- for(i=0; i<y.length; i++){ -->
+		    <!-- console.log(y[i]) -->
+		<!-- } -->
 		
-	
+		let heading=document.createElement("h1");
+		document.body.appendChild(heading);
+		console.log(heading)
+	    let head=document.innerHTML="hello";
+		console.log(head.innerHTML)
 	</script>
 
 </body>
