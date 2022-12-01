@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<head>
+		
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>DOM</title>
+</head>
+<body>
+<script>
+    <!-- var heading=document.createElement(prompt("enter tag")) -->
+	<!-- document.body.appendChild(heading) -->
+	<!-- content=heading.innerHTML=(prompt("content")) -->
+	<!-- let attribute=prompt("attribute") -->
+	<!-- let property=prompt("property") -->
+	<!-- let value=prompt("value") -->
+	<!-- heading.setAttribute(attribute,property+":"+value) -->
+	<!-- insert image -->
+	
+	<!-- var  img=document.createElement(prompt("enter 2nd tag")) -->
+	<!-- img.src="flower.jpeg" -->
+	<!-- document.body.appendChild(img) -->
+	
+	<!-- create div -->
+	var div=document.createElement(prompt("enter tag"))
+	let attribute=prompt("attribute")
+	let property=prompt("property")
+	let value=prompt("value")
+	div.setAttribute(attribute,property+":"+value)
+	document.body.appendChild(div)
+	let head=document.createElement(prompt("enter tag 1"))
+	head.innerHTML=prompt("enter inner content")
+	div.appendChild(head)
+	let para=document.createElement(prompt("enter tag 2"))
+	para.innerHTML=prompt("enter inner content 2")
+	div.appendChild(para)
+	
+	
+	
+	
+	
+	
+	
+
+
+</script>
+</body>
+</html>
