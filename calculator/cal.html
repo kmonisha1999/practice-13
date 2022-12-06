@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+	<head>
+		<title>calculaator</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+	</head>
+<body>
+    <section class="calculator">
+	    <div class="container">
+	        <div class="zero">
+	            <div class="cal">
+				    <input type="text" placeholder="0" id="add">
+					<button onclick="del()">C</button>
+					
+					<button onclick="calculator('%')">%</button>
+					<button onclick="calculator('/')">/</button>
+					<button onclick="back()" class="icon"><iconify-icon icon="material-symbols:backspace-outline"></iconify-icon></button>
+					<button onclick="calculator('7')">7</button>
+					<button onclick="calculator('8')">8</button>
+					<button onclick="calculator('9')">9</button>
+					<button onclick="calculator('*')">x</button>
+					<button onclick="calculator('4')">4</button>
+					<button onclick="calculator('5')">5</button>
+					<button onclick="calculator('6')">6</button>
+					<button onclick="calculator('-')">-</button>
+					<button onclick="calculator('1')">1</button>
+					<button onclick="calculator('2')">2</button>
+					<button onclick="calculator('3')">3</button>
+					<button onclick="calculator('+')">+</button>
+					<button onclick="calculator('0')">0</button>
+					<button onclick="calculator('00')">00</button>
+					<button onclick="calculator('.')">.</button>
+					<button onclick="calculate('=')">=</button>
+				</div>
+	        </div>
+	    </div>
+	</section>
+    <script>
+	    var num=document.getElementById("add");
+		function calculator(number)
+		{
+		    num.value += number;
+		}
+	    function back()
+		{
+		    num.value = num.value.slice(0,-1);
+		}
+	    function  del()
+		{
+		    num.value="";
+		}
+	    function calculate()
+		{
+		    num.value=eval(num.value);
+		}
+	
+	
+	</script>
+
+
+</body>
+</html>
