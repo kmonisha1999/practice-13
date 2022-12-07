@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<head>
+		<title>calculator</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<button  id="btn">click</button>
+	<p id="para"></p>
+	
+	
+	<input type="text" id="name" >
+	<button id="btn2">click</button>
+	<input type="text" id="my">
+	
+	<script>
+	var num=document.getElementById("btn")
+	num.addEventListener("click",myfun)
+	
+	function myfun(){
+	    document.getElementById("para").innerHTML="hello";
+	}
+ 
+    let b=document.getElementById("btn2");
+	
+	b.addEventListener("click",event)
+	function event(){
+	  let inp= document.getElementById("name").value;
+	  document.getElementById("my").value=inp;
+	}
+	</script>
+	</body>
+	</html>
