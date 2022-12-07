@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+	<head>
+		<title>bill</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	    <form>
+	    <label>Bill Amount:</label><input type="text" id="bill"><br>
+		<span id="error" style="color:red;"></span><br>
+	    <label>Tips%:</label><input type="text" id="tips"><br>
+		<span id="error1" style="color:red;"></span><br>
+	    <label>Tips amount:</label><input  id="per"><br><br>
+	    <label>Total Amount:</label><input id="total"><br>
+		<button type="button" id="btn">Total</button>
+		</form>
+		<script>
+		    
+		    let x=document.getElementById("btn");
+		    x.addEventListener("click",total1);
+			function total1()
+			{
+			    let billamount=document.getElementById("bill").value;
+			    let tip=document.getElementById("tips").value;
+				let c=(tip/100)*billamount;
+				document.getElementById("per").value=c;
+				let calculate=(parseInt(billamount)+parseInt(c));
+				document.getElementById("total").value=calculate;
+				
+				if(billamount==="" || isNaN(billamount))
+				{
+				    document.getElementById("error").innerHTML="Please enter correctly" 
+				}
+				if(tip=== "" || isNaN(tip))
+				{
+				    document.getElementById("error1").innerHTML="please enter correctly" 
+				}
+			}
+			
+		
+		
+		
+		</script>
+	</body>
+	</html>
