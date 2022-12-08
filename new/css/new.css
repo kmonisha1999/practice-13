@@ -15,14 +15,16 @@
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	
-	font-size:1.5rem;
+	font-size:1.4rem;
 	line-height:2;
 	font-weight:bold;
 }
-.same{
-	height:80vh;
+.name p{
+	font-size:30px;
 }
+/* .same{ */
+	/* height:80vh; */
+/* } */
 .top{ 
 	z-index:1;
 }
@@ -39,13 +41,28 @@
     width:270px;
 	height:270px;
 }
-.topnav{
-	position:fixed;
-	top:0;
-	left:0;
-	right:0;
-	
+.tool span{
+	font-size:24px;
+	color:#990011FF;
 }
+.tool p{
+	font-size:20px;
+	color:grey;
+}
+.tool h1{
+	font-size:25px;
+}
+.tool a{
+	
+	border-radius:20px;
+	text-decoration:none;
+	padding:10px;
+	font-size:20px;
+	background-color:#FF007F;
+	/* color:#FCF6F5FF; */
+	color:white;
+}
+
 @media(min-width:1024px){
 	.name{
 		font-size:2rem;
@@ -55,7 +72,6 @@
 	}
 }
 .myself img{
-	
 	height:270px;
 	width:100%;
 	border:5px solid rgb(8,121,246);
@@ -67,7 +83,6 @@
 	text-align:center;
 	margin-top:30px;
 }
-
 .para{
 	font-size:1.5rem;
 	color:rgb(8,121,246);
@@ -210,15 +225,8 @@
 .foot{
 	text-align:center;
 }
-.foot h1{
-	font-size:1.5rem;
-	font-weight:700;
-}
-.foot p{
-	font-size:1.2rem;
-}
-.foot h2{
-	font-size:1.3rem;
-	font-weight:bold;
+.foot span{
 	color:#FF007F;
-}
+} 
+
+
