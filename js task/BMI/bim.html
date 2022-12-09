@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+	<head>
+		<title>calculator</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	
+	
+	<body>
+	<!-- BMI -->
+
+	
+	<input type="text" id="height" placeholder="enter height">
+	<input type="text" id="weight" placeholder="enter weight">
+	<button type="button" id="bdn">click</button>
+	<input type="text" id="ans">
+	<script>
+		
+		var button=document.getElementById("bdn")
+		bdn.addEventListener("click",myfunctions)
+		function myfunctions(){
+			var h=document.getElementById("height").value
+			var w=document.getElementById("weight").value
+			var bmi=w/(h/100*h/100)
+			console.log(bmi);
+			document.getElementById("ans").value=bmi
+	
+		 }
+		
+	</script>
+	
+	
+	</body>
+	</html>
