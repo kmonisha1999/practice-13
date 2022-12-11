@@ -4,7 +4,7 @@
 }
 .home{
 	background-image:url(download.jpeg);
-	height:80vh;
+	padding-bottom:25vh;
 	width:100%;
 	background-size:cover;
 	background-position:center;
@@ -21,12 +21,13 @@
 }
 .name{
 	display:flex;
+	color:black;
 }
 .name p{
 	font-size:30px;
 }
 .crop{
-	padding-left:8px;
+	padding-left:10px;
 }
 .green{
 	color:green;
@@ -123,7 +124,6 @@
 .skills h1{
 	font-size:2rem;
 	font-weight:700;
-	color:#FF007F;
 	text-align:center;
 	margin-top:30px;
 }
@@ -153,7 +153,6 @@
 .card-body h5{
 	font-size:1.4rem;
 	font-weight:bold;
-	color:#FF007F;
 }
 .card-body p{
 	font-size:1.3rem;
@@ -200,12 +199,6 @@
 .loc span{
 	margin-top:5rem;
 }
-.phone:hover{
-	box-shadow:0px 0 25px rgb(255 0 127/25%);
-}
-.phone:hover iconify-icon{
-	color:rgb(255 0 127);
-}
 .anchor a{
 	text-decoration:none;
 	color:white;
@@ -221,12 +214,12 @@
 	text-align:center;
 }
 .foot span{
-	color:#FF007F;
+	color:blue;
 } 
 .obj span{
 	font-weight:700;
-	font-size:24px;
-	color:rgb(8,121,246);
+	font-size:22px;
+	color:black;
 }
 .obj{
 	font-size:23px;
