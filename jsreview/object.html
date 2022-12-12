@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+	<head>
+		<title>object</title>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+	<script>
+	    
+		var person={
+		    name:"K.Monisha",
+			DOB:1999,
+            skills:array(),
+			place:"tenkasi",
+			degree:{
+			    bsc:2020,
+				msc:2022
+			}
+        }
+		person["firstname"]="anitha"  //add new key and value
+		person.name="aruna"//change value 
+		person.skills[1]="javascript"//change in array
+		delete person.place//delete key and value
+		person.degree.bsc=2000//change subobject value
+		person.degree["phd"]=2024//create new value in sub obj
+     	console.log(person.degree.bsc)//print subobject value
+		console.log(person)	
+		
+		
+		function array()
+		{
+		let value=prompt("enter length")
+			let arr=[];
+			for(i=0; i<value; i++)
+			{
+				arr[i]=prompt("enter value")
+			}
+			return arr	
+		}
+
+
+
+		var x='5';
+		console.log(x==5)
+	</script>
+	
+	
+	</body>
+	</html>
