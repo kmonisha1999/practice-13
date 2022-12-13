@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>callback</title>
+</head>
+<body>
+<script>
+
+    //callback 
+    function callback(){
+	    console.log("it's me monisha")
+	}
+	function hell(fn){
+	    console.log("first")
+		fn();
+		console.log("second")
+	}
+	hell(callback)
+	
+	//promise
+	
+	function name(){
+	    return new Promise(function(resolve,reject){
+		    console.log("hi");
+			resolve();
+		})
+		.then(function(){
+		    console.log("success")
+		})
+		.catch(function(){
+		    console.log("error")
+		})
+	}
+    name();
+
+
+</script>
+
+
+</body>
+</html>
+
+
+	
