@@ -10,33 +10,67 @@
 <script>
 
     //callback 
-    function callback(){
-	    console.log("it's me monisha")
-	}
-	function hell(fn){
-	    console.log("first")
-		fn();
-		console.log("second")
-	}
-	hell(callback)
+    <!-- function callback(){ -->
+	    <!-- console.log("second") -->
+	<!-- } -->
+	<!-- function call(fn){ -->
+	    <!-- console.log("first") -->
+		<!-- fn(); -->
+		<!-- console.log("third") -->
+	<!-- } -->
+	<!-- call(callback) -->
+	
+	
+	
+	
 	
 	//promise
+	<!-- function name(){ -->
+	    <!-- return new Promise(function(resolve,reject){ -->
+		    <!-- setTimeout(function(){ -->
+			    <!-- console.log("Promise") -->
+			    <!-- reject() -->
+			<!-- }); -->
+		<!-- }) -->
+	<!-- } -->
+    <!-- name() -->
+	<!-- .then(function(resolve){ -->
+	    <!-- console.log("success") -->
+	<!-- }) -->
+    <!-- .catch(function(reject){ -->
+	    <!-- console.log("error") -->
+	<!-- }) -->
+
+
+
+    //callback hell
+	<!-- function main(){ -->
+	    <!-- setTimeout(function(){ -->
+		    <!-- console.log("first callback"); -->
+			<!-- main1(); -->
+		<!-- },3000); -->
+	<!-- } -->
+	<!-- function main1(){ -->
+	    <!-- setTimeout(function(){ -->
+		    <!-- console.log("second callback"); -->
+			<!-- main2(); -->
+		<!-- },2000); -->
+	<!-- } -->
+	<!-- function main2(){ -->
+	    <!-- setTimeout(function(){ -->
+		    <!-- console.log("third callback"); -->
+			<!-- main3(); -->
+		<!-- }) -->
+	<!-- } -->
+	<!-- function main3(){ -->
+	    <!-- setTimeout(function(){ -->
+		    <!-- console.log("fourth callback") -->
+		<!-- },1000); -->
+	<!-- } -->
+	<!-- main() -->
 	
-	function name(){
-	    return new Promise(function(resolve,reject){
-		    console.log("hi");
-			resolve();
-		})
-		.then(function(){
-		    console.log("success")
-		})
-		.catch(function(){
-		    console.log("error")
-		})
-	}
-    name();
-
-
+	
+	
 </script>
 
 
