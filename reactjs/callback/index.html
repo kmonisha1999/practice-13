@@ -10,67 +10,186 @@
 <script>
 
     //callback 
-    <!-- function callback(){ -->
-	    <!-- console.log("second") -->
-	<!-- } -->
-	<!-- function call(fn){ -->
-	    <!-- console.log("first") -->
-		<!-- fn(); -->
-		<!-- console.log("third") -->
-	<!-- } -->
-	<!-- call(callback) -->
+   // function callback(){ 
+	// console.log("second") 
+	//}
+	// function call(fn){ 
+	//     console.log("first") 
+	//	 fn(); 
+	//	 console.log("third") 
+	// } 
+	// call(callback) 
 	
 	
 	
 	
 	
 	//promise
-	<!-- function name(){ -->
-	    <!-- return new Promise(function(resolve,reject){ -->
-		    <!-- setTimeout(function(){ -->
-			    <!-- console.log("Promise") -->
-			    <!-- reject() -->
-			<!-- }); -->
-		<!-- }) -->
-	<!-- } -->
-    <!-- name() -->
-	<!-- .then(function(resolve){ -->
-	    <!-- console.log("success") -->
-	<!-- }) -->
-    <!-- .catch(function(reject){ -->
-	    <!-- console.log("error") -->
-	<!-- }) -->
+	// function name(){ 
+	//     return new Promise(function(resolve,reject){ 
+	//	     setTimeout(function(){ 
+	//		     console.log("Promise") 
+	//		    reject() 
+	//		}); 
+	//	 }) 
+	// } 
+    // name() 
+	// .then(function(resolve){ 
+	//   console.log("success") 
+	// }) 
+   //  .catch(function(reject){ 
+	 //   console.log("error") 
+	 //}) 
 
 
 
     //callback hell
-	<!-- function main(){ -->
-	    <!-- setTimeout(function(){ -->
-		    <!-- console.log("first callback"); -->
-			<!-- main1(); -->
-		<!-- },3000); -->
-	<!-- } -->
-	<!-- function main1(){ -->
-	    <!-- setTimeout(function(){ -->
-		    <!-- console.log("second callback"); -->
-			<!-- main2(); -->
-		<!-- },2000); -->
-	<!-- } -->
-	<!-- function main2(){ -->
-	    <!-- setTimeout(function(){ -->
-		    <!-- console.log("third callback"); -->
-			<!-- main3(); -->
-		<!-- }) -->
-	<!-- } -->
-	<!-- function main3(){ -->
-	    <!-- setTimeout(function(){ -->
-		    <!-- console.log("fourth callback") -->
-		<!-- },1000); -->
-	<!-- } -->
-	<!-- main() -->
-	
-	
-	
+	// function main(){ 
+	  //   setTimeout(function(){ 
+		    
+		//	console.log("first callback"); 
+		//	 main1(); 
+		// },3000); 
+	// } 
+	// function main1(){ 
+	   //  setTimeout(function(){ 
+		    // console.log("second callback"); 
+			// main2(); 
+		// },2000); 
+	 //} 
+	// function main2(){ 
+	    // setTimeout(function(){ 
+		    // console.log("third callback"); 
+			// main3(); 
+		// }) 
+	// } 
+	// function main3(){ 
+	    // setTimeout(function(){ 
+		//     console.log("fourth callback") 
+		//},1000); 
+	// } 
+	//main()
+
+      //promise chaining
+	function one()
+	{
+     return new Promise(function(resolve,reject)
+	 {
+         setTimeout(function()
+		 {
+            resolve() 
+         }, 2000);
+    })
+    }
+
+    function two()
+	{
+     return new Promise(function(resolve,reject)
+	 {
+         setTimeout(function()
+		 {
+             resolve()
+        }, 1000);
+     })
+    }
+	function three()
+	{
+     return new Promise(function(resolve,reject)
+	 {
+         setTimeout(function()
+		{
+             resolve()
+        }, 1000);
+     })
+    }
+	one() .then(function(){
+          console.log("success1")
+		  two() .then(function(){
+			console.log("success2")
+		  })
+		  three() .then(function(){
+			console.log("success3")
+		  })
+		  .catch(function(){
+			console.log("error2")
+		  })
+		  .catch(function(){
+			console.log("error3")
+		  })
+	})
+	.catch(function(){
+		console.log("error1")
+	})
+
+
+
+
+
+	//promise all
+	function a()
+	{ return new Promise(function(resolve,reject){
+		 resolve("res1");	
+	})
+    }
+    function b()
+	{
+		return new Promise(function(resolve,reject){
+		resolve("res2");
+	})
+    }
+	function c()
+	{
+		return new Promise(function(resolve,reject){
+		resolve("res3");
+	})
+    }
+	Promise.all([a(),b(),c()])
+	.then(function(success){
+		console.log("success",success)
+	})
+	.catch(function(){
+		console.log("err")
+	})
+
+	//async await
+	function call()
+	{
+		return new Promise(function(resolve,reject)
+		{
+			setTimeout(function()
+			{
+				resolve("success")
+			},3000)
+		
+		})
+	}
+	function call1()
+	{
+		return new Promise(function(resolve,reject)
+		{
+			setTimeout(function()
+			{
+                resolve("success")
+			},1000)
+			
+		})
+	}
+	async function key()
+	{
+		try
+		{
+			var x=await call();
+			var y=await call1();
+			console.log("res",x,y)
+		}
+		catch(err)
+		{
+			console.log("error")
+		}
+	}
+	key()
+
+   
 </script>
 
 
