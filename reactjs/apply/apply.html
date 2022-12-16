@@ -1,0 +1,108 @@
+<!DOCTYPE html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+</head>
+<body>
+<script>
+     //call
+    const obj={
+	  number:2,
+	};
+	function main(a,b,c){
+		console.log(this,a,b,c)
+	}
+	<!-- main.call(obj,5) -->
+	
+	//Apply--array as a arugument
+	const obj1={
+	    name:"Monisha",
+		age:22,
+	    place:"Pavoorchatram"
+	}
+	function area(a){
+	    console.log(this, "pincode: "+ a)
+	}
+	area.apply(obj1,[627808])
+	
+	
+	//bind-creates copy of a function 
+	const person={
+	    name:"Monisha",
+		lastname:"Kasipandi"
+	}
+	function my(a,b,c){
+	    console.log(this.name + this.lastname,a,b,c)
+	}
+	var details=my.bind(person,1,2,3)
+    details();
+	
+	// variable--let--local or block scope
+	function s(){
+	  var m=1; 
+		if(m==1){
+		    let n=5;  
+		console.log(m+n)
+		}
+		<!-- console.log(n)// n is not defined -->
+	}
+	s()
+	
+	// variable--var
+    function sum(){
+	    var b=50;
+		if(b==50){
+		    var a=50
+		console.log(a+b)
+		}
+		console.log(a) 
+	}
+	sum()
+	
+	// template literal---concart 
+	var g="food";
+	console.log(`sea${g}`);
+	
+	//arrow function simple syntax for function, dont need to write function keyword
+
+	main1=()=>{ 
+	  setTimeout(()=>{     
+		console.log("arrow function");
+
+		},3000); 
+	}  
+	main1()
+	
+	//destructuring
+	//object
+	const des={
+	    w:1,
+		r:2,
+		
+	};
+	const {w,r}=des;
+	des.w=50;
+	console.log(w,r)
+	
+	//array
+	const arr=[10,20,30]
+	const [d,e,f]=arr;
+	console.log(d,e,f)
+	
+    function sub(v=100,u=500){
+	    console.log(v+u);//output 3
+	}
+	sub(1,2)
+	
+	
+	function sun(){
+	    console.log(arguments);//returns in array
+	}
+	sun(1,2,3,4,5)
+	
+	
+</script>
+</body>
+</html>
