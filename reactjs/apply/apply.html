@@ -12,9 +12,9 @@
 	  number:2,
 	};
 	function main(a,b,c){
-		console.log(this,a,b,c)
+		console.log(this.number,a,b,c)
 	}
-	<!-- main.call(obj,5) -->
+	main.call(obj,5,6,7,8)
 	
 	//Apply--array as a arugument
 	const obj1={
