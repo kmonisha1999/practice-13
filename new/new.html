@@ -10,9 +10,12 @@
     <link rel="stylesheet" href="reset/reset.css">
 	<link rel="stylesheet" href="css/new.css">
 	<script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	
     <title>resume</title>
   </head>
   <body>
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <div class="home">
         <div class="top">
 	    <div class="container-fluid">
@@ -59,7 +62,7 @@
 	    <div class="container">
 		    <div class="row same">
 				<div class="col  name">
-				    <img src="image/wh1.jpeg" class="mt-5 bor"> 
+				    <div data-aos="flip-right"><img src="image/wh1.jpeg" class="mt-5 bor"> </div>
 					<h1>Monisha Kasipandi</h1>
 					<p>I'm a FRONT END DEVELOPER</p>
 				</div>
@@ -169,6 +172,7 @@
 			</div>
 		    <div class="row">
 			    <div class="col-sm-12 col-md-12 col-lg-4  mt-5 bsc">
+				    <div data-aos="zoom-in">
 				    <div class="card text mb-3">
 					<div class="card-header">JAVASCRIPT</div>
 					<div class="card-body">
@@ -177,9 +181,10 @@
 						<p class="card-text">Currently, I am pursuing front end developer training in Fabevy technologies Pvt Lmt.,</p>
 					</div>
 					</div>
-				
+				    </div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4 mt-5 bsc">
+				    <div data-aos="zoom-in">
 					<div class="card text mb-3">
 					<div class="card-header">Master of Science(2022)</div>
 					<div class="card-body">
@@ -188,9 +193,10 @@
 						<p class="card-text">I done my post graduate studies with first class with distinction in SPKCEES, M.S University.</p>
 					  </div>
 					</div>
-				
+				    </div>
 				</div>
 				<div class="col-sm-12 col-md-6 col-lg-4  mt-5 bsc">
+				    <div data-aos="zoom-in">
 				    <div class="card text mb-3">
 					<div class="card-header">Bachelor of Science (2020)</div>
 					<div class="card-body">
@@ -198,6 +204,7 @@
 						<h5 class="card-title">Environmental Science</h5>
 						<p class="card-text">I done my under graduate studies with first class with distinction in SPKCEES, M.S University.</p>
 					  </div>
+					</div>
 					</div>
 				</div>
 				
@@ -214,7 +221,9 @@
 			</div>
 	       	<div class="row mt-5">
                 <div class="col-sm-12 col-md-6 mt-3">
+				    <div data-aos="fade-right">
 				    <img src="image/ss-01.png" width="100%">
+					</div>
                 </div>
 				<div class="col mt-3 tool">
 				    <h1>NINESTAR</h1>
@@ -225,7 +234,9 @@
 					<a href="file:///D:/fabevy/Practice/practice-13/template/index.html" target="-blank">Check it out</a></div>
 				</div>
 				<div class="col-sm-12 col-md-6 mt-3">
+				    <div data-aos="fade-right">
 				    <img src="image/ss-2.png" width="100%">
+					</div>
                 </div>
 				<div class="col mt-3 tool">
 				    <h1>MAMBA</h1>
@@ -314,5 +325,8 @@
 			
 	    </div>
 	</div>
+	<script>
+  AOS.init();
+</script>
   </body>
 </html>
