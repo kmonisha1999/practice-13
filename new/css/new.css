@@ -2,18 +2,15 @@
 	width:90%;
 	margin:auto;
 }
-/* .home{ */
-	/* background-image:url(download.jpeg); */
-	/* padding-bottom:25vh; */
-	/* width:100%; */
-	/* background-size:cover; */
-	/* background-position:center; */
-/* } */
-.top{
-	
+.home{
+	background-image:url(download.jpeg);
+	padding-bottom:25vh;
+	width:100%;
+	background-size:cover;
+	background-position:center;
 }
 .home{
-	background-color:rgb(8,121,246);
+	/* background-color:rgb(8,121,246); */
 	padding-bottom:10%;
 }
 .name{
@@ -243,3 +240,8 @@
 	border-radius:50%;
 	border:7px solid white;
 }
+/* .wh1{ */
+	/* background-color:blue; */
+	/* border-radius:60% 40% 40% 40%; */
+	/* padding:5%; */
+/* } */
