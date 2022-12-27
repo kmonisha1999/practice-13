@@ -26,6 +26,7 @@ body{
 	background-color:#eb5d1e;
 	border-radius:20px;
 	border:none;
+	color:white;
 }
 .homeimg img{
 	width:100%;
@@ -187,6 +188,9 @@ body{
 }
 .s1:hover{
 	border-bottom:3px solid #eb5d1e;
+	transform: translatey(-5px);
+    transition: 0.2s ease;
+    margin-top: -8px;
 }
 .pb{
 	text-align:center;
@@ -202,72 +206,77 @@ body{
 .pb a:hover{
 	color:#eb5d1e;
 }
-.web img{
+.all img{
 	width:100%;
+	border-radius:3%;
 }
-.web1{
-	width:100% !important;
-}
-.web1 img{
-	width:100% !important;
-	border-radius:10px;
-}
-.web1{
-	position:relative !important;
-	margin-top:20px !important;
-}
-/*   .web1::before{
-    content:"";
-    position:absolute;
-    width:0%;
-    background:#eb5d1e;
-	top:0;
-	right:0;
-	transition:all 0.4s;
-}
-.web1:hover ::before{
+.all{
+	position:relative;
 	width:100%;
-	bottom:0;
-}  */  
-.folio{
-	position:absolute;
-	top:0; 
-	right:0;
-	bottom:0;
-	left:0;
-	text-align:center;
-	background-color:#0000009e;
-	opacity:0 !important;
-	border-radius:10px;
+	margin-top:2rem;
 }
-.web1:hover .folio{
-	opacity: 1!important;
-	transition:1s ease !important;	
-}
-.folio h3{
-	font-size:1.7rem;
+.all::before{
+	content: "";
+	position: absolute;
+	width: 0%;
+	background-color: #8d808080;
+	top: 0px;
+	right: 0px;
+	transition: all 0.4s;
 	color:white;
-	line-height:2;	
-	cursor:pointer;
+	border-radius:3%;
 }
-.folio h5{
-	font-size:1.2rem;
-	color:white;
-	cursor:pointer;
+.all:hover::before{
+	width: 100%;
+	bottom: 0px;
 }
-.folio iconify-icon{
-	font-size:20px;
-	padding:10px;
-	border-radius:50%;
-	background-color:white;
-	color:#eb5d1e;
+.appicon{
+	display:flex;
+	justify-content:center;
+	align-items:center;
 	margin-top:20%;
-	cursor:pointer;
-	}
-.folio iconify-icon:hover{
-	background-color:#eb5d1e;
+	gap:10px;
+	text-align:center;
+}
+.app1{
+	position:absolute;
+	text-align:center;
+	top:0;
+	bottom:0;
+	right:100%;
+	left:0;
+	opacity: 0;
+	width:100%;
+	border-radius:3%;
+}
+.app1:hover{
+	opacity:1;
+	transition:1s ease;
+}
+.app1 h3{
 	color:white;
-}	
+	font-size:25px;
+	margin-top:25px;
+}
+.app1 p{
+	color:white;
+	margin-top:10px;
+}
+.appicon1{
+	border-radius:50%;
+	height:50px;
+	width:50px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	font-size:20px;
+	background-color:white;
+	color:#F89050;
+}
+.appicon1:hover{
+	background-color:#F89050;
+	color:white;
+}
 .portfolio{
 	padding-bottom:50px;
 }
@@ -279,7 +288,7 @@ body{
 	background-color:#FEF8F5;
 }
 .accordion-button{
-	background-color:#FEF8F5;!important;
+	background-color:#FEF8F5!important;
 }
 .accordion-button:hover{
 	color:#c54811;
