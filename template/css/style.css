@@ -14,14 +14,14 @@ body{
 .logo a{
 	letter-spacing:4px;
 }
-/* .top{
-	position:fixed;
+.top{
+	position:sticky;
 	top:0;
 	right:0;
 	left:0;
 	bottom:0;
-	z-index:3;
-} */
+	z-index:999;
+} 
 .gs{
 	background-color:#eb5d1e;
 	border-radius:20px;
@@ -416,14 +416,27 @@ body{
 		}
 }
 /* team ends */
+/* clients start */
 .clients{
 	background-color:#fef8f5;
 	padding-bottom:50px;
+}
+.caro{
+	width:100%;
+}
+.car{
+	width:60%;
 } 
-.png img{
+@media(min-width:360px){
+	.caro{
+	width:100%;
+}
+.car{
+	width:60%;
 	margin:auto;
 }
-
+}
+/* clients end */
 .icon{
 	height:50px;
 	width:50px;
@@ -433,6 +446,7 @@ body{
 	align-items:center;
 	background-color:#fdf1ec;
 }
+
 .icon:hover{
 	background-color:#ed5d1e;
 }
