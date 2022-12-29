@@ -1,26 +1,9 @@
 
 body{
-	font-family:'Raleway', sans-serif;}
-.logo a{
-	font-size:30px;
-	color:#7a6960;
-}
-.nav a{
-	font-size:15px;
+	font-family:'Raleway', sans-serif;
 }
 .alink:hover{
 	color:#eb5d1e !important;
-}
-.logo a{
-	letter-spacing:4px;
-}
-.top{
-	position:sticky;
-	top:0;
-	right:0;
-	left:0;
-	bottom:0;
-	z-index:999;
 } 
 .gs{
 	background-color:#eb5d1e;
@@ -44,8 +27,8 @@ body{
 }
 .home{
 	background-color:#fef8f5;
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:5rem;
+	padding-bottom:5rem;
 	border-bottom: 2px solid #fcebe3;
 	font-family:'Raleway', sans-serif;
 }
@@ -78,8 +61,8 @@ body{
 	}
 }
 .about{
-	padding-top:60px;
-	padding-bottom:60px;
+	padding-top:5rem;
+	padding-bottom:5rem;
 }
 .abtp h1{
 	font-size:30px;
@@ -103,7 +86,8 @@ body{
 }
 .service{
 	background-color:#fef8f5;
-	padding-bottom:50px;
+	padding-top:4rem;
+	padding-bottom:4rem;
 } 
 .ser{
 	text-align:center;
@@ -264,8 +248,8 @@ body{
 }
 .appicon1{
 	border-radius:50%;
-	height:50px;
-	width:50px;
+	height:40px;
+	width:40px;
 	display:flex;
 	justify-content:center;
 	align-items:center;
@@ -278,7 +262,8 @@ body{
 	color:white;
 }
 .portfolio{
-	padding-bottom:50px;
+	padding-top:4rem;
+	padding-bottom:4rem;
 }
 .faq{
 	background-color:#fef8f5;
@@ -295,7 +280,8 @@ body{
 }
 /* teams starts */
 .team{
-	padding-bottom:50px;
+	padding-bottom:4rem;
+	padding-top:4rem;
 }
 .tm{
 	position:relative;
@@ -446,7 +432,6 @@ body{
 	align-items:center;
 	background-color:#fdf1ec;
 }
-
 .icon:hover{
 	background-color:#ed5d1e;
 }
@@ -463,7 +448,6 @@ body{
 }
 .para h1{
 	font-size:20px;
-	
 	color:#7a6960;
 }
 .para p{
@@ -475,7 +459,8 @@ body{
 	color:#eb5d1e;
 }
 .add{
-	padding-bottom:50px;
+	padding-bottom:4rem;
+	padding-top:4rem;
 }
 .hold{
 	width:48%;
