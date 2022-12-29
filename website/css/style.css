@@ -21,7 +21,7 @@ body{
 .topbar{
 	width:100%;
 	display:flex;
-	justify-content:space-around;
+	gap:15px;
 	font-size:1rem;
 	padding:20px;	
 }
@@ -44,7 +44,6 @@ body{
 .media{
 	display:none;
 }
-
 .topnav{
 	display:flex;
 	justify-content:space-between;
@@ -75,7 +74,6 @@ body{
 .topnav a:hover{
 	color:#428bca;
 }
-
 @media(min-width:768px){
 	.topbar{
 		width:50%;
@@ -84,7 +82,6 @@ body{
 	}
 	.media{
 		display:block;	
-       		
 	}
 	.media iconify-icon{
 		color:#1c5c93;
@@ -144,7 +141,6 @@ body{
 	font-weight:800;
 	padding-top:2rem;
 	color:white;
-	
 }
 .read{
 	margin-top:1rem;
@@ -155,6 +151,9 @@ body{
 		background-color:#428bca;
 		padding:5px 20px 5px 20px;
 		color:white;
+}
+.left{
+	line-height:2;
 }
 .left p{
 	line-height:1.5;
@@ -168,7 +167,6 @@ body{
 			background-color:#428bca;
 			padding:10px 20px 10px 20px;
 			color:white;
-			
 	}
 	.read{
 		margin-top:30px;
@@ -185,8 +183,7 @@ body{
 		font-size:1.5rem;
 		font-weight:800;
 		padding-top:2rem;
-		color:white;
-		
+		color:white;		
 	}
 }
 @media(min-width:1024px){
@@ -215,19 +212,19 @@ body{
 /* Home section ends*/
 /* about section starts*/
 .about{
-	padding-top:3rem;
+	padding-top:5rem;
+	padding-bottom:5rem;
 	line-height:1.5;
 }
 .us{
 	text-align:center;
 }
 .ai iconify-icon{
-	font-size:35px;
+	font-size:25px;
 	margin-top:px;
 	color:white;
 	margin:auto;
 }
-
 .abtimg {
 	position:relative;
 }
@@ -237,7 +234,7 @@ body{
 	width:4rem;
 	height:4rem;
 	border-radius:50%;
-	border:10px solid #c0d3e6;
+	border:6px solid #c0d3e6;
 	color:white;
 	font-weight:700;
 	display:flex;
@@ -247,7 +244,6 @@ body{
     left:35%;
 	margin:auto;
 }
-
 .us h1{
 	font-size:1.5rem;
 	font-weight:600;
@@ -283,8 +279,7 @@ body{
 }
 .abticon iconify-icon{
 	font-size:1.8rem;
-	color:#428bca;
-	
+	color:#428bca;	
 }
 .abticon:hover{
 	background-color:#428bca;
@@ -303,7 +298,6 @@ body{
 .abtp p{
 	font-size:0.8rem;
 }
-
 @media(min-width:768px){
 	.abtimg{
 		width:48%;
@@ -315,31 +309,6 @@ body{
 		display:flex;
 		justify-content:space-between;
 	}
-	.ai iconify-icon{
-	font-size:35px;
-	margin-bottom:px;
-	color:white;
-}
-.abtimg {
-	position:relative;
-}
-.ai{
-	position:absolute;
-	background-color:#428bca;
-	color:white;
-	font-weight:600;
-	display:flex;
-	justify-content:center;
-	align-items:center;
-	width:4rem;
-	height:4rem;
-	border-radius:50%;
-	border:10px solid #c0d3e6;
-	top:30%;
-    left:35%;
-	margin:auto;
-}
-	
 }
 @media(min-width:1024px){
     .us h1{
@@ -368,26 +337,27 @@ body{
 	top:40%;
     left:40%;
 	border-radius:50%;
-	border:10px solid #c0d3e6;
+	border:6px solid #c0d3e6;
 	margin:auto;
 }
 }
 /* about section ends*/
 /* six box section starts*/
     .boxes{
-		margin-top:2.5rem;
+		padding-top:;
+		padding-bottom:4rem;
 	}
 	.box-1, .box-2, .box-3, .box-4, .box-5, .box-6{
 		padding-left:10px;
-		
 	}
 	.b1, .b2, .b3, .b4, .b5, .b6{
-		border-bottom:0.5px solid silver;
+		border-bottom:0.5px solid #9eccf4;
 	}
 	.box-1 h4{
-		font-size: 24px;
+		font-size: 30px;
 		font-weight: 400;
 		color: #9eccf4;
+		margin-top:10px;
 	}
 	.box-1 h3{
 		font-size:20px;
@@ -396,6 +366,7 @@ body{
 	.box-1 p{
 		line-height:1.5;
 		margin-bottom:30px;
+		color:#aaaaaa;
 	}
 	@media(min-width:768px){
 		.boxes{
@@ -405,7 +376,7 @@ body{
 			width:45%;
 		}
 		.b1, .b3, .b5{
-			border-right:0.5px solid silver;
+			border-right:0.5px solid #9eccf4;
 		}
 		.b5, .b6{
 			border-bottom:none;
@@ -427,7 +398,7 @@ body{
 			width:32%;
 		}
 		.b4, .b2{
-			border-right:0.5px solid silver;
+			border-right:0.5px solid #9eccf4;
 		}
 		.b3{
 			border-right:none;
@@ -436,7 +407,7 @@ body{
 			border-bottom:none;
 		}
 		.box-1 h4{
-			font-size:22px;
+			font-size:30px;
 		}
 		.box-1 h3{
 			font-size:26px;
@@ -464,6 +435,7 @@ body{
 		font-size:35px;
 		font-family:Times new roman;
 		font-weight:800;
+		color:#1c5c93;
 	}
 	.num1 p{
 		font-size:18px;
@@ -492,9 +464,9 @@ body{
 /* four box ends */
 /* service section starts */
         .services{
-			margin-bottom:40px;
+			padding-top:5rem;
+			padding-bottom:5rem;
 		}
-		
         .sh{
 			text-align:center;
 			font-size: 32px;
@@ -505,7 +477,10 @@ body{
 		.s1{
 			text-align:center;
 			align-items:center;
-			margin:20px 0px 20px 0px; 
+			margin:20px 0px 20px 0px;
+		}
+		.s1 h3:hover{
+			color:#428bca;
 		}
 		.sericon{
 			height:60px;
@@ -528,7 +503,7 @@ body{
 			font-size:18px;
 			font-weight:600;
 			color:#444;
-			margin:20px 0px 20px 0px; 
+			margin:20px 0px 20px 0px;
 		}
 		.s1 h3::after{
 			content:"";
@@ -564,9 +539,9 @@ body{
 /* service section ends */
 /* portfolio section starts */
     .portfolio{
-		background-color:#f1f7fb;
-		padding-top:50px;
-		padding-bottom:50px;
+		padding-top:5.5rem;
+		padding-bottom:5.5rem;
+	    background-color:#f1f7fb;	
 	}
     .port{
 		text-align:center;
@@ -616,8 +591,7 @@ body{
 		padding-top:4rem;
 	}
 	.folio{
-		color:white;
-		
+		color:white;	
 	}
 	.pi:hover .folio{
 		opacity:1;
@@ -649,19 +623,6 @@ body{
 	background-color:#0d6efd;
 	color:white;
 }	
-	
-	/* .folio iconify-icon{ */
-		/* font-size:20px; */
-		/* color:black; */
-		/* gap:20px; */
-		/* border-radius:50%; */
-		/* padding:10px; */
-		/* background-color:white; */
-	/* } */
-	/* .folio iconify-icon:hover{ */
-		/* background-color: */
-	/* } */
-	
 	@media(min-width:768px){
 		.pi{
 			width:49%;
@@ -695,7 +656,6 @@ body{
 		color:white;
 		line-height:2;
 	}
-	
 	.pi:hover .folio{
 		opacity:1;
 		transition:1s ease-in;
@@ -722,8 +682,7 @@ body{
 			left:0;
 			right:0;
 			text-align:center;
-			background-color:#0000009e;
-		
+			background-color:#0000009e;	
 		}
 		.folio h1{
 			padding-top:4rem;
@@ -737,12 +696,11 @@ body{
 			transition:1s ease-in;
 		}
 	}
-	
 /* portfolio section ends */
 /* team section starts */
     .team{
-		padding-top:30px;
-		padding-bottom:30px;
+		padding-top:6rem;
+		padding-bottom:6rem;
 	}
 	.tm1{
 		position:relative;
@@ -761,7 +719,6 @@ body{
 		overflow:hidden;
 		/* transition:0.3s ease-in-out; */
     }
-   
 	/* .teamimg:hover img{ */
 		/* transform:scale(1.1); */
 		/* transition:all 0.5s ease; */
@@ -791,8 +748,7 @@ body{
 		   position:relative;
 		   z-index:1;
 		   margin-top:-70px;
-		   background-color:#587187c4;
-		   
+		   background-color:#587187c4;	   
 	}
 	.teaminfo h4{
 		font-weight:700;
@@ -809,7 +765,6 @@ body{
 		margin-top:10px;
 		color:white;
 	}
-	
 @media(min-width:768px){
     
     .teamimg img{
@@ -850,8 +805,7 @@ body{
 }
 @media(min-width:1024px){
 	.teamimg{
-	    width:100%;
-		
+	    width:100%;	
 	}
     .teamimg img{
 	    width:100%;
@@ -890,16 +844,14 @@ body{
 	}	
     .teaminfo h4{
 		font-weight:700;
-	}
-	
-    	
+	}	
 }
 /* team section ends */
 /* faq section starts */
     .faq{
 		background-color:#f1f7fb;
-		padding-top:50px;
-		padding-bottom:50px;
+		padding-top:5rem;
+		padding-bottom:5rem;
 	}
 	.ques{
 		padding-top:30px;
@@ -942,12 +894,11 @@ body{
 			justify-content:space-between;
 		}
 	}
-
 /* faq section ends */
 /* address section starts */
 	.address{
-		padding-top:50px;
-		padding-bottom:50px;
+		padding-top:6rem;
+		padding-bottom:6rem;
 	}
 	.ouraddress{
 		text-align:center;
@@ -964,8 +915,7 @@ body{
 		margin:auto;
 		display:flex;
 		align-items:center;
-		justify-content:center;
-		
+		justify-content:center;	
 	}
     .dd iconify-icon{
 		font-size:35px;
@@ -1079,8 +1029,6 @@ body{
 		font-size:18px;
 	}
 }
-
-
 /* address section ends */
 /* links section starts */
 .links{
@@ -1102,7 +1050,7 @@ body{
 }
 
 .call1 iconify-icon{
-	font-size:25px;	
+	font-size:18px;	
     color: #fff;
 }
 .ni{
@@ -1162,19 +1110,31 @@ body{
 	font-weight:600;
 } 
 @media(min-width:768px){
-	
-	
+	.tree{
+		width:100%;
+		display:flex;
+		flex-wrap:wrap;
+	}
+	.news{
+		width:50%;
+	}
+	.call1{
+		width:50%;
+	}
+	.useful{
+		width:50%;
+	}
 }
 @media(min-width:1024px){
 	.call1{
-		width:25%;
+		width:24%;
 		margin-top:20px;
 	}
 	.useful{
-		width:25%;
+		width:20%;
 	}
 	.news{
-		width:38%;
+		width:35%;
 	}
 	.privacy{
 		display:flex;
@@ -1191,8 +1151,7 @@ body{
 	}
 	.call1 iconify-icon{
 		font-size:15px;
-	}
-	
+	}	
 	.useful h4{
 		font-size:18px;
 		font-weight:600;
@@ -1204,7 +1163,6 @@ body{
 		font-size:14px;
 	}
 }
-
 /* links section ends*/
 /* footer section starts */
     .footer{
@@ -1224,7 +1182,5 @@ body{
 	    text-decoration:none;
 		color:#9eccf4;
 	} 
-
-
 /* footer section ends */
 
