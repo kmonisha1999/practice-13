@@ -1109,6 +1109,9 @@ body{
 	font-size:18px;
 	font-weight:600;
 } 
+.news p{
+	font-size:14px;
+}
 @media(min-width:768px){
 	.tree{
 		width:100%;
