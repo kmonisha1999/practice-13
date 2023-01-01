@@ -3,37 +3,56 @@
 	margin:auto;
 }
 .home{
-	background-image:url(download.jpeg);
-	padding-bottom:25vh;
 	width:100%;
+	background-color:black;
 	background-size:cover;
 	background-position:center;
+	background-attachment:fixed;
+	
+	/* color:#86c232; */
 }
-.home{
-	/* background-color:rgb(8,121,246); */
-	padding-bottom:10%;
+.cv{
+	padding:6px;
+	border-radius:30px;
+	/* background-color:#86c232; */
+	background-color:#FFCC00;
 }
-.name{
+.cv a{
+	text-decoration:none;
+	font-size:20px;
 	color:white;
+}
+.name img{
+	width:100%;
+}
+.nav-link{
+	font-size:20px;
+	color:white;
+}
+.navbar-brand{
+	color:#FFCC00;
+	font-weight:700;
+}
+.nav-item a:hover{
+	color:#FFCC00;
+}
+.me{
+	color:white;
+	text-align:center;
 	display:flex;
 	flex-direction:column;
 	justify-content:center;
 	align-items:center;
-	font-size:1.4rem;
 	line-height:2;
-	font-weight:bold;
-	text-align:center;
+	margin:auto;
 }
-/* .name{ */
-	/* display:flex; */
-	/* color:black; */
-/* } */
-.name p{
-	font-size:30px;
-	color:white;
+.me h1{
+	font-size:55px;
+	font-weight:800;
+	color:#FFCC00;
 }
-.name h1{
-	color:white;
+.me p{
+	font-size:35px;
 }
 .crop{
 	padding-left:10px;
@@ -67,7 +86,6 @@
 	background-color:#FF007F;
 	color:white;
 }
-
 @media(min-width:1024px){
 	.name{
 		font-size:2rem;
@@ -79,25 +97,25 @@
 .myself img{
 	height:270px;
 	width:100%;
-	border:5px solid rgb(8,121,246);
+	border:5px solid black;
 }
 .img h1{
 	font-size:2rem;
 	font-weight:700;
-	color:#FF007F;
+	color:black;
 	text-align:center;
 	margin-top:30px;
 }
 .para{
 	font-size:1.5rem;
-	color:rgb(8,121,246);
+	color:white;
 }
 .details{
 	line-height:2;
 }
 .about{
 	padding-bottom:30px;
-	background-color:#fef8f5;
+	background-color:#FFCC00;
 }
 .details span{
 	font-weight:700;
@@ -142,7 +160,7 @@
 	color:rgb(8,121,246);
 }
 .sk{
-	background-color: #f1f7fb;
+	background-color:;
 }
 .resume{
 	background-color:#fef8f5;	
@@ -175,6 +193,7 @@
 	border:1px solid black;
 }
 .contact{
+	padding-top:5rem;
 	background-color:#f1f7fb;
 }
 .num{
@@ -218,6 +237,8 @@
 }
 .footer{
 	background-color:#fef8f5;
+	padding-top:1rem;
+	padding-bottom:1rem;
 }
 .foot{
 	text-align:center;
