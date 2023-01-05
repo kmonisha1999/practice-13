@@ -4,6 +4,7 @@
 }
 .home{
 	width:100%;
+	/* background-color:black; */
 	background-color:black;
 	background-size:cover;
 	background-position:center;
@@ -11,6 +12,12 @@
 	
 	/* color:#86c232; */
 }
+/* .navbar-toggler{ */
+	/* color:white; */
+/* } */
+/* .navbar-toggler-icon{ */
+	/* color:white; */
+/* } */
 .cv{
 	padding:6px;
 	border-radius:30px;
@@ -32,6 +39,9 @@
 .navbar-brand{
 	color:#FFCC00;
 	font-weight:700;
+}
+.navbar-brand:hover{
+	color:#FFCC00;
 }
 .nav-item a:hover{
 	color:#FFCC00;
@@ -104,20 +114,21 @@
 .img h1{
 	font-size:2rem;
 	font-weight:700;
-	color:black;
+	color:#FFCC00;
 	text-align:center;
 	margin-top:30px;
 }
 .para{
 	font-size:1.5rem;
-	color:white;
+	/* color:white; */
 }
 .details{
 	line-height:2;
 }
 .about{
-	padding-bottom:30px;
-	background-color:#FFCC00;
+	/* padding-bottom:30px; */
+	/* padding-top:50px; */
+	background-color:#8080801c;
 }
 .details span{
 	font-weight:700;
@@ -156,6 +167,8 @@
 	text-align:center;
 	margin-top:30px;
 	color:#FFCC00;
+	/* text-shadow: 6px 6px 8px black; */
+	
 }
 .skills p{
 	font-size:1.5rem;
@@ -166,7 +179,7 @@
 	background-color:;
 }
 .resume{
-	background-color:;	
+	background-color:#8080801c;	
 }
 .res{
 	font-weight:bold;
@@ -176,9 +189,9 @@
 	border:1px solid black;
 }
 .contact{
-	padding-top:5rem;
-	padding-bottom:5rem;
-	background-color:;
+	/* padding-top:5rem; */
+	/* padding-bottom:5rem; */
+	background-color:#8080801c;
 }
 .num{
     text-align:center;
@@ -210,8 +223,8 @@
 }
 .footer{
 	background-color:#FFCC00;
-	padding-top:1rem;
-	padding-bottom:1rem;
+	/* padding-top:1rem; */
+	/* padding-bottom:1rem; */
 }
 .foot{
 	text-align:center;
@@ -246,6 +259,7 @@
 	border:3px solid #FFCC00;
 	box-shadow:0 0 16px rgb(0 0 0/10%);
 	width:49%;
+	background-color:white;
 }
 .s1 h3{
 	font-size:19px;
